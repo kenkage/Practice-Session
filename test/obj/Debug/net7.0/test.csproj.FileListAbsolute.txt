@@ -1,0 +1,15 @@
+/Users/kayjay/Projects/test/test/bin/Debug/net7.0/test
+/Users/kayjay/Projects/test/test/bin/Debug/net7.0/test.deps.json
+/Users/kayjay/Projects/test/test/bin/Debug/net7.0/test.runtimeconfig.json
+/Users/kayjay/Projects/test/test/bin/Debug/net7.0/test.dll
+/Users/kayjay/Projects/test/test/bin/Debug/net7.0/test.pdb
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.csproj.AssemblyReference.cache
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.AssemblyInfoInputs.cache
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.AssemblyInfo.cs
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.csproj.CoreCompileInputs.cache
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.dll
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/refint/test.dll
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.pdb
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/test.genruntimeconfig.cache
+/Users/kayjay/Projects/test/test/obj/Debug/net7.0/ref/test.dll
