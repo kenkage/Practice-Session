@@ -54,7 +54,6 @@ namespace test
             {
                 Console.WriteLine(res);
             }
-            //Console.WriteLine(result); // Output: "leetcode"
         }
     }
 }
