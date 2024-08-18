@@ -1,8 +1,8 @@
 ﻿using System;
 namespace test
 {
-	public class Solution
-	{
+	public class SimplifiedFraction
+    {
             public IList<string> SimplifiedFractions(int n)
             {
                 List<string> result = new List<string>();
@@ -45,16 +45,16 @@ namespace test
 
     public class Program5
     {
-        public static void Main()
-        {
-            Solution solution = new Solution();
-            IList<string> result = solution.SimplifiedFractions(4);
+        //public static void Main()
+        //{
+        //    SimplifiedFraction solution = new SimplifiedFraction();
+        //    IList<string> result = solution.SimplifiedFractions(4);
 
-            foreach(var res in result)
-            {
-                Console.WriteLine(res);
-            }
-        }
+        //    foreach(var res in result)
+        //    {
+        //        Console.WriteLine(res);
+        //    }
+        //}
     }
 }
 
