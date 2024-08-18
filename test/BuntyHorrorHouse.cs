@@ -20,7 +20,7 @@ namespace test
             Console.WriteLine($"Total Paths: {totalPaths}");
         }
 
-        static int CountPaths(int[][] maze, int i, int j, int N, List<string> path)
+        static int CountPaths(int[][] maze, int i, int j, int N, List<string> path, string direction = null)
         {
             // Base case: If Bunty reaches the bottom-right corner
             if (i == N - 1 && j == N - 1)
@@ -39,10 +39,10 @@ namespace test
             path.Add($"({i},{j})");
 
             // Explore all four directions
-            int paths =   CountPaths(maze, i + 1, j, N, path)  // Down
-                        + CountPaths(maze, i - 1, j, N, path)  // Up
-                        + CountPaths(maze, i, j + 1, N, path)  // Right
-                        + CountPaths(maze, i, j - 1, N, path);  // Left
+            int paths =   CountPaths(maze, i + 1, j, N, path, "Down")  // Down
+                        + CountPaths(maze, i - 1, j, N, path, "Up")  // Up
+                        + CountPaths(maze, i, j + 1, N, path, "Rigth")  // Right
+                        + CountPaths(maze, i, j - 1, N, path, "Left");  // Left
 
             // Backtrack: Mark the cell as unvisited
             maze[i][j] = 1;
