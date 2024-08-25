@@ -5,20 +5,20 @@ namespace test
 {
     class BuntyHorrorHouse
     {
-        static void Main()
-        {
-            int N = int.Parse(Console.ReadLine());
-            int[][] maze = new int[N][];
+        //static void Main()
+        //{
+        //    int N = int.Parse(Console.ReadLine());
+        //    int[][] maze = new int[N][];
 
-            for (int i = 0; i < N; i++)
-            {
+        //    for (int i = 0; i < N; i++)
+        //    {
 
-                maze[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-            }
-            List<string> path = new List<string>();
-            int totalPaths = CountPaths(maze, 0, 0, N, path);
-            Console.WriteLine($"Total Paths: {totalPaths}");
-        }
+        //        maze[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        //    }
+        //    List<string> path = new List<string>();
+        //    int totalPaths = CountPaths(maze, 0, 0, N, path);
+        //    Console.WriteLine($"Total Paths: {totalPaths}");
+        //}
 
         static int CountPaths(int[][] maze, int i, int j, int N, List<string> path, string direction = null)
         {
