@@ -3,19 +3,19 @@ namespace test
 {
 	public class LongestCommomSubstrings
 	{
-        //static void Main()
-        //{
-        //    Console.Write("Enter the first string: ");
-        //    string? str1 = Console.ReadLine();
+        static void Main()
+        {
+            Console.Write("Enter the first string: ");
+            string? str1 = Console.ReadLine();
 
-        //    Console.Write("Enter the second string: ");
-        //    string? str2 = Console.ReadLine();
+            Console.Write("Enter the second string: ");
+            string? str2 = Console.ReadLine();
 
-        //    //string result = LCS(str1, str2);
-        //    string result = FindLongestCommonSubstring(str1, str2);
-            
-        //    Console.WriteLine("Longest common substring: " + result);
-        //}
+            //string result = LCS(str1, str2);
+            string result = FindLongestCommonSubstring(str1, str2);
+
+            Console.WriteLine("Longest common substring: " + result);
+        }
 
         // With Dynamic Programming
         //public static string LCS(string? str1, string? str2)
@@ -63,7 +63,7 @@ namespace test
                     if (length > maxLength)
                     {
                         maxLength = length;
-                        endingIndex = i;
+                        endingIndex = j;
                     }
                 }
             }
@@ -73,7 +73,7 @@ namespace test
             }
             int startIndex = endingIndex - maxLength + 1;
 
-            return str1.Substring(startIndex, maxLength);
+            return str2.Substring(endingIndex, maxLength);
         }
 
         public static int LongestCommonSubstringRecursive(string str1, string str2, int i, int j, int count)
@@ -92,4 +92,3 @@ namespace test
         }
     }
 }
-
