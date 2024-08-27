@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="TGP-C3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TGP-C3\" />
+  </ItemGroup>
 </Project>

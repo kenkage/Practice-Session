@@ -3,32 +3,32 @@ namespace test
 {
 	public class MinTaxPaid_I
 	{
-		static void Main()
-		{
-            Console.WriteLine("Enter the size of the grid (n):");
-            //int n = int.Parse(Console.ReadLine());
-            string[] parts = Console.ReadLine().Split(' ');
-            int n = int.Parse(parts[0]);
-            int m = int.Parse(parts[1]);
+		//static void Main()
+		//{
+  //          Console.WriteLine("Enter the size of the grid (n):");
+  //          //int n = int.Parse(Console.ReadLine());
+  //          string[] parts = Console.ReadLine().Split(' ');
+  //          int n = int.Parse(parts[0]);
+  //          int m = int.Parse(parts[1]);
 
 
-            int[,] grid = new int[n, n];
+  //          int[,] grid = new int[n, n];
 
-            Console.WriteLine("Enter the grid values row by row:");
+  //          Console.WriteLine("Enter the grid values row by row:");
 
-            for (int i = 0; i < n; i++)
-            {
-                string[] inputRow = Console.ReadLine().Split(' ');
+  //          for (int i = 0; i < n; i++)
+  //          {
+  //              string[] inputRow = Console.ReadLine().Split(' ');
 
-                for (int j = 0; j < n; j++)
-                {
-                    grid[i, j] = int.Parse(inputRow[j]);
-                }
-            }
+  //              for (int j = 0; j < n; j++)
+  //              {
+  //                  grid[i, j] = int.Parse(inputRow[j]);
+  //              }
+  //          }
 
-            int result = MinPathSum(grid, n, m);
-            Console.WriteLine("The minimum sum path is: " + result);
-        }
+  //          int result = MinPathSum(grid, n, m);
+  //          Console.WriteLine("The minimum sum path is: " + result);
+  //      }
 
         static int MinPathSum(int[,] grid, int n, int m)
         {
