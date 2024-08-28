@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="TGP-C3\" />
+    <None Remove="TGP-C4\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
+    <Folder Include="TGP-C4\" />
   </ItemGroup>
 </Project>

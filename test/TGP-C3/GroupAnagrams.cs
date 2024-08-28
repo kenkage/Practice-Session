@@ -1,18 +1,17 @@
-﻿using System;
-namespace test.TGPC3
+﻿namespace test.TGPC3
 {
-	public class GroupAnagrams
+    public class GroupAnagrams
 	{
-		static void Main()
-		{
-            //int n = 6;
-            int n = int.Parse(Console.ReadLine());
-            string[] strs = new string[n];
-            strs = Console.ReadLine().Split(' ');
-            //string[] strs = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
+		//static void Main()
+		//{
+  //          int n = 6;
+  //          //int n = int.Parse(Console.ReadLine());
+  //          string[] strs = new string[n];
+  //          strs = Console.ReadLine().Split(' ');
+  //          //string[] strs = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
 
-            GroupAnagram(n, strs);
-        }
+  //          GroupAnagram(n, strs);
+  //      }
 
 		static void GroupAnagram(int n, string[] strs)
 		{
