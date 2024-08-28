@@ -10,7 +10,7 @@ namespace test.TGPC4
 		//	string num = "1432219";
 		//	int k = 3;
 		//	string result = Remove_K_Digits(num, k);
-  //          string res1 = Remove_K_Digits_UsingList(num, k);
+        //   string res1 = Remove_K_Digits_UsingList(num, k);
 		//	Console.WriteLine($"{res1}");
 		//}
 

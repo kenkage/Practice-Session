@@ -3,14 +3,14 @@ namespace test.TGPC4
 {
 	public class RemoveDuplicateLetters
 	{
-        static void Main()
-        {
-            Console.WriteLine("Enter a string"); 
-            string s = Console.ReadLine();
+        //static void Main()
+        //{
+        //    Console.WriteLine("Enter a string"); 
+        //    string s = Console.ReadLine();
 
-            string result = RemoveDuplicate(s);
-            Console.WriteLine($"{result}");
-        }
+        //    string result = RemoveDuplicate(s);
+        //    Console.WriteLine($"{result}");
+        //}
 
         static string RemoveDuplicate(string str)
         {
