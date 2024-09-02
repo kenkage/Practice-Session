@@ -1,4 +1,26 @@
-﻿using System;
+﻿/*
+ * MIN TAX PAID_I
+Given a m x n grid filled with non-negative numbers, A explorer is at top left cell and he has to find a path from top left to bottom right, but there is a condition he has to pay an amount equal to the cell if he choose to include a particular cell in his path, suggest a path which minimizes the money paid by the explorer
+
+Example
+
+Input: grid = [[1,3,1],[1,5,1],[4,2,1]]
+
+Output: 7
+Note: You can only move either down or right at any point in time.
+
+Constraints:
+
+m == grid.length
+
+n == grid[i].length
+
+1 <= m, n <= 200
+
+0 <= grid[i][j] <= 200
+ */
+
+using System;
 namespace test
 {
 	public class MinTaxPaid_I

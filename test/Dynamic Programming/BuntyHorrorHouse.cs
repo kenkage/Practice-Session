@@ -1,4 +1,48 @@
-﻿using System;
+﻿/*
+Problem: 
+Bunty in the horror house
+Bunty is stuck in a horror house that consists of a N*N maze with bunty being at room [0][0]. Find the total number paths that bunty can follow to reach the exit i.e. room[N-1][N-1]. He can move in any direc­tion ( left, right, up and down).
+Value of every room in the maze can either be 0 or 1. Room with value 0 are blocked means they cant be accessed and those with value 1 are open.
+
+Input Format:
+
+The first line of input contains an integer 'N' representing the dimension of the maze.
+The next N lines of input contain N space-separated integers representing the type of the cell.
+
+Output Format :
+
+For each test case, print the total number of paths possible from start to exit.
+
+Constraints:
+
+0 < N < 11
+
+0 <= Maze[i][j] <=1
+
+Sample Input 1 :
+
+3
+1 0 1
+
+1 0 1
+
+1 1 1
+Sample Output 1 :
+
+1
+
+Explanation: Only 1 path is possible which is:
+
+1 0 0 
+
+1 0 0 
+
+1 1 1 
+(1 representing the path he took) Which is printed from left to right and then top to bottom in one line. 
+ 
+ */
+
+using System;
 using System.IO;
 
 namespace test

@@ -1,4 +1,27 @@
-﻿using System;
+﻿/*
+ * MIN COINS REQUIRED-II
+Alice has coins of different denominations and he has to pay an amount to buy a item. Return the number of combinations that make up that amount. If that amount of money cannot be made up by any combination of the coins, return 0. You may assume that you have an infinite number of each kind of coin.
+
+Constraints:
+
+1 <= coins.length <= 300
+
+1 <= coins[i] <= 5000
+
+All the values of coins are unique.
+
+0 <= amount <= 5000
+
+Example:
+
+**Input: ** amount = 5, coins = [1,2,5]
+
+Output:
+4
+ */
+
+
+using System;
 namespace test
 {
 	public class MinCoins1

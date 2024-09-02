@@ -1,4 +1,37 @@
-﻿using System;
+﻿/*
+ * Secret Codes
+You and your friend have decided to exchange messages in the form of secret codes. You will be communicating in numbers where number '1' represents 'a' number '2' represents 'b' and so on until the number '26' that represents 'z'. Every message has a difficulty which is represented as the total number of ways your message can be interpreted. For example: 23 can be interpreted as 'ab' as well as 'w' so it has a difficulty of 2. Given an array 'ar' containing n number of integers, calculate its difficulty.
+
+Input Format:
+
+The first line contains a single integer 'n' denoting the size of array.
+
+Second line contains 'n' number of space separated integers.
+
+Output:
+
+Return the difficulty of the secret code which would be an integer.
+
+Sample Input:
+
+3
+
+1 2 3
+
+Sample Output:
+
+3
+
+Explanation: Since there are total 3 ways the message can be interpreted which are abc, lc, aw. Thus, the difficulty would be 3.
+
+Constraints:
+
+1<=n<=10^4
+
+0<=a[i]<=9
+ */
+
+using System;
 namespace test.DynamicProgramming
 {
 	public class SecretCode

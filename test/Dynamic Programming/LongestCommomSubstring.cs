@@ -1,4 +1,58 @@
-﻿using System;
+﻿/*
+ * Longest Common Substring
+Given two strings, find out the longest common substring. A substring is a contiguous segment within a string.
+
+Input:
+
+str1 : First String
+
+str2 : Second string
+Output:
+
+Return a string which is a longest common substring in both str1 and str2. If there are multiple substring with longest length return which has the smallest starting index.
+Examples:
+
+Example 1:
+
+Input:
+
+str1 = "abcdefgabcdegh"
+
+str2 = "abcdeghabfvsnm"
+Output:
+
+"abcdegh"
+Explanation:
+
+For the strings "abcdefgabcdegh" and "abcdeghabfvsnm":
+
+The longest common substring is "abcdegh", appearing in the same order in both strings.
+Example 2:
+
+Input:
+
+str1 = "abc"
+
+str2 = "def"
+Output:
+
+""
+Constraints:
+
+1 <= str1.length <= 1000
+
+1 <= str2.length <= 1000
+
+str1 & str2 consist only of lowercase English letters.
+
+Explanation:
+
+For the strings "abc" and "def":
+
+No common substring is present.
+ */
+
+using System;
 namespace test
 {
 	public class LongestCommomSubstrings
