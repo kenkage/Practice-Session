@@ -21,8 +21,8 @@ namespace test.DynamicProgramming
 			int pick = Solve(arr, i + 1, n); // for single digit
 
 			if(i + 1 <= n-1 && (arr[i] * 10 + arr[i+1]) <= 26)  // check if the next digit of double digit is not exceeding the length of array: i+1 <= n-1
-            {                                                   // to check if double digit formed will be less than 26
-                pick += Solve(arr, i + 2, n);
+        		{                                                   // to check if double digit formed will be less than 26
+                		pick += Solve(arr, i + 2, n);
 			}
 
 			return pick;
