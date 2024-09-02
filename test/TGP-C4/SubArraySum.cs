@@ -1,4 +1,6 @@
-﻿using System;
+﻿// https://leetcode.com/problems/sum-of-subarray-minimums/description/
+
+using System;
 namespace test.TGPC4
 {
 	public class SubArraySum

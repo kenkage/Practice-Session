@@ -1,4 +1,26 @@
-﻿using System;
+﻿/*
+ * New Matrix
+Tuntun is very creative. She is thinking of a new way to modify the matrix but she is very weak in coding so help her to do so. You are given a n x m integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+You must do it in place.
+
+Input Format
+- The first line contains two space-separated integers ‘N’ and ‘M’, denoting the no. of the rows and columns of the matrix.
+
+- The next 'N' lines will contain ‘M’ space separated integers representing the elements of the matrix.
+
+
+
+Output Format:
+print the modified grid in a separate line.
+
+
+Example
+1 1 1                  1 0 1
+1 0 1     =>        0 0 0
+1 1 1                  1 0 1
+ */
+
+using System;
 namespace test.TGPC4
 {
 	public class NewMatrix
