@@ -5,15 +5,15 @@ namespace test
 	{
 		//static void Main()
 		//{
-  //          string[] parts = Console.ReadLine().Split(' ');
-  //          int n = int.Parse(parts[0]);
-  //          int sum = int.Parse(parts[1]);
-  //          int[] coins = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		//	string[] parts = Console.ReadLine().Split(' ');
+		//	int n = int.Parse(parts[0]);
+		//	int sum = int.Parse(parts[1]);
+		//	int[] coins = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-  //          int[,] dp = new int[n + 1, sum + 1];
-		//	for(int i=0; i< n+1; i++)
+		//	int[,] dp = new int[n + 1, sum + 1];
+		//	for (int i = 0; i < n + 1; i++)
 		//	{
-		//		for(int j=0; j< sum+1; j++)
+		//		for (int j = 0; j < sum + 1; j++)
 		//		{
 		//			dp[i, j] = -1;
 		//		}
