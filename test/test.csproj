@@ -10,9 +10,11 @@
   <ItemGroup>
     <None Remove="TGP-C3\" />
     <None Remove="TGP-C4\" />
+    <None Remove="Arrays\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
     <Folder Include="TGP-C4\" />
+    <Folder Include="Arrays\" />
   </ItemGroup>
 </Project>

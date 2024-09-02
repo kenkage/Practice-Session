@@ -3,36 +3,36 @@ namespace test.TGPC4
 {
 	public class NewMatrix
 	{
-		//static void Main()
-		//{
-  //          var dimensions = Console.ReadLine().Split(' ');
-  //          int n = int.Parse(dimensions[0]);
-  //          int m = int.Parse(dimensions[1]);
+        //static void Main()
+        //{
+        //    var dimensions = Console.ReadLine().Split(' ');
+        //    int n = int.Parse(dimensions[0]);
+        //    int m = int.Parse(dimensions[1]);
 
-  //          // Input the matrix
-  //          int[,] matrix = new int[n, m];
-  //          for (int i = 0; i < n; i++)
-  //          {
-  //              var row = Console.ReadLine().Split(' ');
-  //              for (int j = 0; j < m; j++)
-  //              {
-  //                  matrix[i, j] = int.Parse(row[j]);
-  //              }
-  //          }
+        //    // Input the matrix
+        //    int[,] matrix = new int[n, m];
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        var row = Console.ReadLine().Split(' ');
+        //        for (int j = 0; j < m; j++)
+        //        {
+        //            matrix[i, j] = int.Parse(row[j]);
+        //        }
+        //    }
 
-  //          // Modify the matrix in place
-  //          SetZeroes(matrix);
+        //    // Modify the matrix in place
+        //    SetZeroes(matrix);
 
-  //          // Output the modified matrix
-  //          for (int i = 0; i < n; i++)
-  //          {
-  //              for (int j = 0; j < m; j++)
-  //              {
-  //                  Console.Write(matrix[i, j] + " ");
-  //              }
-  //              Console.WriteLine();
-  //          }
-  //      }
+        //    // Output the modified matrix
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        for (int j = 0; j < m; j++)
+        //        {
+        //            Console.Write(matrix[i, j] + " ");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
 
         static void SetZeroes(int[,] matrix)
         {
@@ -72,20 +72,24 @@ namespace test.TGPC4
                         matrix[i, 0] = 0;
                         matrix[0, j] = 0;
                     }
-                }
-            }
-
-            // Zero out cells based on markers in first row and column
-            for (int i = 1; i < n; i++)
-            {
-                for (int j = 1; j < m; j++)
-                {
                     if (matrix[i, 0] == 0 || matrix[0, j] == 0)
                     {
                         matrix[i, j] = 0;
                     }
                 }
             }
+
+            // Zero out cells based on markers in first row and column
+            //for (int i = 1; i < n; i++)
+            //{
+            //    for (int j = 1; j < m; j++)
+            //    {
+            //        if (matrix[i, 0] == 0 || matrix[0, j] == 0)
+            //        {
+            //            matrix[i, j] = 0;
+            //        }
+            //    }
+            //}
 
             // Handle the first row
             if (firstRowZero)

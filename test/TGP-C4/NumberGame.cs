@@ -3,31 +3,42 @@ namespace test.TGPC4
 {
 	public class NumberGame
 	{
-		static void Main()
-		{
-            string[] inputs = Console.ReadLine().Split(' ');
-            int a = int.Parse(inputs[0]);
-            int b = int.Parse(inputs[1]);
-            int n = int.Parse(inputs[2]);
+		//static void Main()
+		//{
+  //          string[] inputs = Console.ReadLine().Split(' ');
+  //          int a = int.Parse(inputs[0]);
+  //          int b = int.Parse(inputs[1]);
+  //          int n = int.Parse(inputs[2]);
 
-            while (true)
+  //          while (true)
+  //          {
+  //              int gcdBholu = GCD(a, n);
+  //              if (n < gcdBholu)
+  //              {
+  //                  Console.WriteLine(1); // Dholu wins
+  //                  break;
+  //              }
+  //              n -= gcdBholu;
+
+  //              int gcdDholu = GCD(b, n);
+  //              if (n < gcdDholu)
+  //              {
+  //                  Console.WriteLine(0); // Bholu wins
+  //                  break;
+  //              }
+  //              n -= gcdDholu;
+  //          }
+  //      }
+
+        public static int GCD(int x, int y)
+        {
+            while (y != 0)
             {
-                int gcdBholu = GCD(a, n);
-                if (n < gcdBholu)
-                {
-                    Console.WriteLine(1); // Dholu wins
-                    break;
-                }
-                n -= gcdBholu;
-
-                int gcdDholu = GCD(b, n);
-                if (n < gcdDholu)
-                {
-                    Console.WriteLine(0); // Bholu wins
-                    break;
-                }
-                n -= gcdDholu;
+                int temp = y;
+                y = x % y;
+                x = temp;
             }
+            return x;
         }
 
         //private static int GCD(int a, int b)
@@ -51,17 +62,6 @@ namespace test.TGPC4
         //    //}
         //    //return a;
         //}
-
-        public static int GCD(int x, int y)
-        {
-            while (y != 0)
-            {
-                int temp = y;
-                y = x % y;
-                x = temp;
-            }
-            return x;
-        }
     }
 }
 
