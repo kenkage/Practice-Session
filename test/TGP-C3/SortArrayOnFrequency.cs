@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+ * Sort the Array
+You have to sort the string s in decreasing order based on the frequency of the characters. Return the sorted string. if frequency of two character are same then sort in alphabetical order.
+
+Example 1
+
+Input
+s = "tree"
+
+
+Output
+"eert"
+ */
+
+using System;
 namespace test.TGPC3
 {
 	public class SortArrayOnFrequency
