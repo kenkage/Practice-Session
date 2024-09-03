@@ -18,8 +18,8 @@ namespace test
 			int[] memo = new int[N];
 			Array.Fill(memo, -1);
 			int result = MinJumpsHelper(arr, 0, N, memo);
-            return result == int.MaxValue ? -1 : result;
-        }
+            		return result == int.MaxValue ? -1 : result;
+       		}
 
 		private static int MinJumpsHelper(int[] arr, int currentIndex, int N, int[] memo)
 		{
@@ -41,8 +41,8 @@ namespace test
 					minJumps = Math.Min(minJumps, jumps + 1);
 				}
 			}
-            memo[currentIndex] = minJumps;
-            return minJumps;
+		        memo[currentIndex] = minJumps;
+		        return minJumps;
 		}
 
     }
