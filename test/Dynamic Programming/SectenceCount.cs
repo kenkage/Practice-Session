@@ -36,21 +36,21 @@ namespace test.DynamicProgramming
 {
 	public class SectenceCount
 	{
-        static void Main()
-        {
-            // List<string> dict = new List<string> { "he", "hebrew", "brew", "bible", "isa", "book", "is", "a" };
-            Console.WriteLine("Enter the number of dictionary words:");
-            int n = int.Parse(Console.ReadLine());
+        //static void Main()
+        //{
+        //    // List<string> dict = new List<string> { "he", "hebrew", "brew", "bible", "isa", "book", "is", "a" };
+        //    Console.WriteLine("Enter the number of dictionary words:");
+        //    int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the dictionary words:");
-            List<string> dict = new List<string>(Console.ReadLine().Trim().Split(' '));
+        //    Console.WriteLine("Enter the dictionary words:");
+        //    List<string> dict = new List<string>(Console.ReadLine().Trim().Split(' '));
 
-            Console.WriteLine("Enter the string to form sentences from:");
-            string s = "hebrewbibleisabook"; // Console.ReadLine().Trim();
+        //    Console.WriteLine("Enter the string to form sentences from:");
+        //    string s = "hebrewbibleisabook"; // Console.ReadLine().Trim();
 
-            int result = CountSentences(s, dict);
-            Console.WriteLine($"{result}");
-        }
+        //    int result = CountSentences(s, dict);
+        //    Console.WriteLine($"{result}");
+        //}
 
         static int CountSentences(string s, List<string> dict)
         {

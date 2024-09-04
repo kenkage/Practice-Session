@@ -1,6 +1,9 @@
 ﻿/*
  * MIN TAX PAID_II
-Given a n x n grid filled with non-negative numbers, A explorer is at top left cell and he has to find a path from top left to bottom right, but there is a condition he has to pay an amount equal to the cell if he choose to include a particular cell in his path, suggest a falling path which minimizes the money paid by the explorer. The explorer can move down, right or diagonally down.
+Given a n x n grid filled with non-negative numbers,
+A explorer is at top left cell and he has to find a path from top left to bottom right,
+but there is a condition he has to pay an amount equal to the cell if he choose to include a particular cell in his path,
+suggest a falling path which minimizes the money paid by the explorer. The explorer can move down, right or diagonally down.
 
 Example
 
