@@ -12,7 +12,7 @@ namespace test.DynamicProgramming
 		//{
   //          string[] parts = Console.ReadLine().Split(' ');
   //          int m = int.Parse(parts[0]);
-		//	int n = int.Parse(parts[1]);
+		//	  int n = int.Parse(parts[1]);
 
 		//	//int res = UniquePath(m, n);
   //          //Console.WriteLine(res);
