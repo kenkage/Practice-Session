@@ -16,7 +16,7 @@ namespace test.DynamicProgramming
         {
             int minChar = 'a' - 0;
             //int result = helper(s, 0, 0, 0, minChar);
-            int result = FindGreatestSequence(s, n - 1, s[n - 1]);
+            int result = FindGreatestSequence(s, n-1, s[n - 1]);
             return result;
         }
 
@@ -40,7 +40,6 @@ namespace test.DynamicProgramming
 
         static int FindGreatestSequence(string s, int i, char maxChar)
         {
-            // Base case: when we reach the start of the string
             if (i < 0)
             {
                 return 0;
