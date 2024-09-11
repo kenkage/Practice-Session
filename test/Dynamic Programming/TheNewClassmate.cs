@@ -5,14 +5,14 @@ namespace test.DynamicProgramming
 {
 	public class TheNewClassmate
 	{
-        static void Main()
-        {
-            //int n = Convert.ToInt32(Console.ReadLine());
-            string s = Console.ReadLine();
+        //static void Main()
+        //{
+        //    //int n = Convert.ToInt32(Console.ReadLine());
+        //    string s = Console.ReadLine();
 
-            int result = GreatestLexicographicalSequenceSize(s.Length, s);
-            Console.WriteLine(result);
-        }
+        //    int result = GreatestLexicographicalSequenceSize(s.Length, s);
+        //    Console.WriteLine(result);
+        //}
 
         static int GreatestLexicographicalSequenceSize(int n, string s)
         {
@@ -31,7 +31,7 @@ namespace test.DynamicProgramming
             {
                 // minChar = s[idx]; // don't need to update minChar in not pick scneario
                 Console.WriteLine($"Pick: {s[idx]}, MinChar: {minChar}");
-                ans = Helper(s, idx + 1, ans, count + 1, s[idx]); // Pick
+                ans = Helper(s, idx + 1, ans, count + 1, s[idx]); // Pick and updated the minChar
                 int ans2 = Helper(s, idx + 1, ans, count, minChar); // Non-Pick
                 return Math.Max(ans, ans2);
             }
