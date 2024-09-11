@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+
 namespace test.DynamicProgramming
 {
 	public class TheNewClassmate
@@ -14,47 +16,30 @@ namespace test.DynamicProgramming
 
         static int GreatestLexicographicalSequenceSize(int n, string s)
         {
-            int minChar = 'a' - 0;
-            //int result = helper(s, 0, 0, 0, minChar);
-            int result = FindGreatestSequence(s, n-1, s[n - 1]);
+            char minChar = (char)('a' - 0);
+            int result = Helper(s, 0, 0, 0, minChar);
             return result;
         }
 
-        //public static int helper(string s, int idx, int ans, int count, int minChar)
-        //{
-
-        //    if(idx == s.Length)
-        //    {
-        //        return Math.Max(ans, count);
-        //    }
-
-        //    if(minChar <= s[idx])
-        //    {
-        //        minChar = s[idx];
-        //        ans = helper(s, idx + 1, ans, count + 1, minChar);
-        //        return ans;
-        //    }
-        //    ans = helper(s, idx + 1, ans, count, minChar);
-        //    return ans;
-        //}
-
-        static int FindGreatestSequence(string s, int i, char maxChar)
+        public static int Helper(string s, int idx, int ans, int count, char minChar)
         {
-            if (i < 0)
+            if (idx == s.Length)
             {
-                return 0;
+                return Math.Max(ans, count);
             }
-
-            // If the current character is greater than or equal to maxChar
-            if (s[i] >= maxChar)
+            if (minChar <= s[idx])
             {
-                // Include the current character in the sequence and update maxChar
-                return 1 + FindGreatestSequence(s, i - 1, s[i]);
+                // minChar = s[idx]; // don't need to update minChar in not pick scneario
+                Console.WriteLine($"Pick: {s[idx]}, MinChar: {minChar}");
+                ans = Helper(s, idx + 1, ans, count + 1, s[idx]); // Pick
+                int ans2 = Helper(s, idx + 1, ans, count, minChar); // Non-Pick
+                return Math.Max(ans, ans2);
             }
             else
             {
-                // Skip the current character and continue recursion
-                return FindGreatestSequence(s, i - 1, maxChar);
+                Console.WriteLine($"Not Pick: {s[idx]}");
+                ans = Helper(s, idx + 1, ans, count, minChar); 
+                return ans;
             }
         }
     }
