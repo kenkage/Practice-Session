@@ -1,41 +1,41 @@
 ﻿using System;
 namespace test.LinkedList
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
+    //public class ListNode
+    //{
+    //    public int val;
+    //    public ListNode next;
+    //    public ListNode(int val = 0, ListNode next = null)
+    //    {
+    //        this.val = val;
+    //        this.next = next;
+    //    }
+    //}
 
     public class SumOfLinkedList
 	{
-        public static void Main()
-        {
-            // Read input for the number of nodes in both lists
-            string[] lengths = Console.ReadLine().Split(' ');
-            int l1 = int.Parse(lengths[0]);
-            int l2 = int.Parse(lengths[1]);
+        //public static void Main()
+        //{
+        //    // Read input for the number of nodes in both lists
+        //    string[] lengths = Console.ReadLine().Split(' ');
+        //    int l1 = int.Parse(lengths[0]);
+        //    int l2 = int.Parse(lengths[1]);
 
-            // Read digits for the first list
-            int[] digits1 = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        //    // Read digits for the first list
+        //    int[] digits1 = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-            // Read digits for the second list
-            int[] digits2 = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        //    // Read digits for the second list
+        //    int[] digits2 = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-            // Build linked lists from the input digits
-            ListNode list1 = BuildList(digits1);
-            ListNode list2 = BuildList(digits2);
+        //    // Build linked lists from the input digits
+        //    ListNode list1 = BuildList(digits1);
+        //    ListNode list2 = BuildList(digits2);
 
-            ListNode result = AddTwoNumbers(list1, list2);
+        //    ListNode result = AddTwoNumbers(list1, list2);
 
-            // Print the result linked list
-            PrintList(result);
-        }
+        //    // Print the result linked list
+        //    PrintList(result);
+        //}
 
         public static ListNode Reverse(ListNode head)
         {
