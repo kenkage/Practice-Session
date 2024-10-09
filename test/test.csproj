@@ -12,11 +12,13 @@
     <None Remove="TGP-C4\" />
     <None Remove="Arrays\" />
     <None Remove="Dynamic Programming\" />
+    <None Remove="Sets\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
     <Folder Include="TGP-C4\" />
     <Folder Include="Arrays\" />
     <Folder Include="Dynamic Programming\" />
+    <Folder Include="Sets\" />
   </ItemGroup>
 </Project>

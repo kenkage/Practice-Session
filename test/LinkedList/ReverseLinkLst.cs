@@ -14,17 +14,17 @@ namespace test.LinkedList
 
     public class ReverseLinkLst
 	{
-		static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		//static void Main()
+  //      {
+  //          int n = int.Parse(Console.ReadLine());
+  //          int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-            ListNode head = BuildList(array);
+  //          ListNode head = BuildList(array);
 
-            ListNode reversedHead = ReverseList(head);
+  //          ListNode reversedHead = ReverseList(head);
 
-            PrintList(reversedHead);
-        }
+  //          PrintList(reversedHead);
+  //      }
 
 		static ListNode BuildList(int[] arr)
 		{
