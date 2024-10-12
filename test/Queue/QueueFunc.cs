@@ -30,35 +30,35 @@ namespace test.Queue
         //	}
         //      }
 
-        static void Main()
-        {
-            string[] firstLine = Console.ReadLine().Split();
-            int n = int.Parse(firstLine[0]);
-            int k = int.Parse(firstLine[1]);
+        //static void Main()
+        //{
+        //    string[] firstLine = Console.ReadLine().Split();
+        //    int n = int.Parse(firstLine[0]);
+        //    int k = int.Parse(firstLine[1]);
 
-            int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Queue<int> queue = new Queue<int>(elements);
+        //    Queue<int> queue = new Queue<int>(elements);
 
-            // Remove the first element from the queue
-            queue.Dequeue();
+        //    // Remove the first element from the queue
+        //    queue.Dequeue();
 
-            // Print the first element of the queue
-            Console.WriteLine(queue.Peek());
+        //    // Print the first element of the queue
+        //    Console.WriteLine(queue.Peek());
 
-            // Check if 'k' exists in the queue
-            if (queue.Contains(k))
-            {
-                Console.WriteLine("Yes");
-            }
-            else
-            {
-                Console.WriteLine("No");
-            }
+        //    // Check if 'k' exists in the queue
+        //    if (queue.Contains(k))
+        //    {
+        //        Console.WriteLine("Yes");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No");
+        //    }
 
-            // Print the remaining queue elements
-            Console.WriteLine(string.Join(" ", queue));
-        }
+        //    // Print the remaining queue elements
+        //    Console.WriteLine(string.Join(" ", queue));
+        //}
     }
 }
 
