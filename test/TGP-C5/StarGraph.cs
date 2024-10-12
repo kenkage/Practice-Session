@@ -59,16 +59,41 @@ namespace test.TGPC5
 {
 	public class StarGraph
 	{
-        static int FindCenter(int[][] edges)
+        static int FindCenter(int[][] edges, int n)
         {
-            // The center of the star graph must appear in both of the first two edges
-            int u1 = edges[0][0], v1 = edges[0][1];
-            int u2 = edges[1][0], v2 = edges[1][1];
+            //// The center of the star graph must appear in both of the first two edges
+            //int u1 = edges[0][0], v1 = edges[0][1];
+            //int u2 = edges[1][0], v2 = edges[1][1];
 
-            // If either u1 or v1 is common in both edges, that is the center
-            if (u1 == u2 || u1 == v2)
-                return u1;
-            return v1;
+            //// If either u1 or v1 is common in both edges, that is the center
+            //if (u1 == u2 || u1 == v2)
+            //    return u1;
+            //return v1;
+
+            // Create a dictionary to store the degree (connection count) of each node
+            Dictionary<int, int> degree = new Dictionary<int, int>();
+
+            // Populate the degree of each node
+            foreach (var edge in edges)
+            {
+                if (!degree.ContainsKey(edge[0])) degree[edge[0]] = 0;
+                if (!degree.ContainsKey(edge[1])) degree[edge[1]] = 0;
+
+                degree[edge[0]]++;
+                degree[edge[1]]++;
+            }
+
+            // The center node must have exactly n-1 connections
+            foreach (var node in degree)
+            {
+                if (node.Value == n - 1)
+                {
+                    return node.Key;
+                }
+            }
+
+            // If no center is found, return -1 (should not happen in a valid star graph)
+            return -1;
         }
 
         public static void Main()
@@ -83,7 +108,7 @@ namespace test.TGPC5
                 edges[i] = new int[] { int.Parse(input[0]), int.Parse(input[1]) };
             }
             
-            int center = FindCenter(edges);
+            int center = FindCenter(edges, n);
 
             // Output the center
             Console.WriteLine(center);
