@@ -36,7 +36,7 @@ namespace test.LinkedList
 				currentNode.next = new ListNode(num);
 				currentNode = currentNode.next;
 			}
-			return dummyHead.next;
+			return dummyHead.next;	
 		}
 
 		static ListNode ReverseList(ListNode head)

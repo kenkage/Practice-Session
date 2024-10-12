@@ -14,6 +14,7 @@
     <None Remove="Dynamic Programming\" />
     <None Remove="Sets\" />
     <None Remove="Queue\" />
+    <None Remove="TGP-C5\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
@@ -22,5 +23,6 @@
     <Folder Include="Dynamic Programming\" />
     <Folder Include="Sets\" />
     <Folder Include="Queue\" />
+    <Folder Include="TGP-C5\" />
   </ItemGroup>
 </Project>

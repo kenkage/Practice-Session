@@ -3,12 +3,12 @@ namespace test.Queue
 {
 	public class FirstNonRepeating
 	{
-        static void Main()
-        {
-            string input = Console.ReadLine();
-            string result = FirstNonRepeatingCharacter(input);
-            Console.WriteLine(result);
-        }
+        //static void Main()
+        //{
+        //    string input = Console.ReadLine();
+        //    string result = FirstNonRepeatingCharacter(input);
+        //    Console.WriteLine(result);
+        //}
 
         static string FirstNonRepeatingCharacter(string str)
         {
