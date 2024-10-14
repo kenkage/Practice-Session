@@ -1,30 +1,30 @@
 ﻿using System;
 namespace test.LinkedList
 {
-	public class ListNode
-	{
-		public int val;
-		public ListNode next;
-		public ListNode(int val = 0, ListNode next = null)
-		{
-			this.val = val;
-			this.next = next;
-		}
-	}
+	//public class ListNode
+	//{
+	//	public int val;
+	//	public ListNode next;
+	//	public ListNode(int val = 0, ListNode next = null)
+	//	{
+	//		this.val = val;
+	//		this.next = next;
+	//	}
+	//}
 
     public class ReverseLinkLst
 	{
 		//static void Main()
-  //      {
-  //          int n = int.Parse(Console.ReadLine());
-  //          int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		//{
+		//	int n = int.Parse(Console.ReadLine());
+		//	int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-  //          ListNode head = BuildList(array);
+		//	ListNode head = BuildList(array);
 
-  //          ListNode reversedHead = ReverseList(head);
+		//	ListNode reversedHead = ReverseList(head);
 
-  //          PrintList(reversedHead);
-  //      }
+		//	PrintList(reversedHead);
+		//}
 
 		static ListNode BuildList(int[] arr)
 		{
@@ -44,10 +44,10 @@ namespace test.LinkedList
 			ListNode prev = null, current = head;
 			while(current != null)
 			{
-				ListNode next = current.next;
+				ListNode temp = current.next;
 				current.next = prev;
 				prev = current;
-				current = next;
+				current = temp;
 			}
 			return prev;
 		}

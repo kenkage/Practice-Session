@@ -96,23 +96,23 @@ namespace test.TGPC5
             return -1;
         }
 
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[][] edges = new int[n - 1][];
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[][] edges = new int[n - 1][];
 
-            // Read the edges
-            for (int i = 0; i < n - 1; i++)
-            {
-                string[] input = Console.ReadLine().Split();
-                edges[i] = new int[] { int.Parse(input[0]), int.Parse(input[1]) };
-            }
+        //    // Read the edges
+        //    for (int i = 0; i < n - 1; i++)
+        //    {
+        //        string[] input = Console.ReadLine().Split();
+        //        edges[i] = new int[] { int.Parse(input[0]), int.Parse(input[1]) };
+        //    }
             
-            int center = FindCenter(edges, n);
+        //    int center = FindCenter(edges, n);
 
-            // Output the center
-            Console.WriteLine(center);
-        }
+        //    // Output the center
+        //    Console.WriteLine(center);
+        //}
     }
 }
 
