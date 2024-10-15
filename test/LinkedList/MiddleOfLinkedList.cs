@@ -1,16 +1,16 @@
 ﻿using System;
 namespace test.LinkedList
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
+    //public class ListNode
+    //{
+    //    public int val;
+    //    public ListNode next;
+    //    public ListNode(int val = 0, ListNode next = null)
+    //    {
+    //        this.val = val;
+    //        this.next = next;
+    //    }
+    //}
 
     public class MiddleOfLinkedList
 	{
@@ -33,7 +33,8 @@ namespace test.LinkedList
 
             foreach (int num in numbers)
             {
-                current.next = new ListNode(num);
+                ListNode newNode = new ListNode(num);
+                current.next = newNode;
                 current = current.next;
             }
 

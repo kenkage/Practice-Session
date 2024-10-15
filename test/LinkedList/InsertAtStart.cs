@@ -16,20 +16,20 @@ namespace test.LinkedList
 
     public class InsertAtStart
 	{
-        static void Main()
-        {
-            string[] input = Console.ReadLine().Split();
-            int[] values = Array.ConvertAll(input, int.Parse);
+        //static void Main()
+        //{
+        //    string[] input = Console.ReadLine().Split();
+        //    int[] values = Array.ConvertAll(input, int.Parse);
 
-            int val = int.Parse(Console.ReadLine());
+        //    int val = int.Parse(Console.ReadLine());
 
-            DoublyLinkedListNode head = CreateList(values);
+        //    DoublyLinkedListNode head = CreateList(values);
 
-            // Perform the insertions
-            head = AddVal(head, val);
+        //    // Perform the insertions
+        //    head = AddVal(head, val);
 
-            PrintList(head);
-        }
+        //    PrintList(head);
+        //}
 
         public static DoublyLinkedListNode CreateList(int[] values)
         {
