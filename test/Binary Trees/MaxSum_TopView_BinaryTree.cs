@@ -84,7 +84,7 @@ namespace test.BinaryTrees
 
                 if (!topViewMap.ContainsKey(hd))                                        // It'll igonre the node 5 & 6 because 5 & 6 would be having hd as 0
                                                                                         // and hd 0 has already been inserted in topViewMap with root node.
-																						// Therefore, performance.
+										        // Therefore, performance.
                 {
                     topViewMap[hd] = node.val;
                 }
@@ -92,13 +92,13 @@ namespace test.BinaryTrees
                 if (node.left != null) queue.Enqueue((node.left, hd - 1));
                 if (node.right != null) queue.Enqueue((node.right, hd + 1));
             }
-																						  //     1(hd = 0)
-																						  //    /   \
-																						  // (hd = -1)(hd = +1)
-																						  //    2       3
-																						  //   / \     / \
-																						  //(hd = -2)  0  0(hd = +2)
-																						  //  4        5  6     7
+											//     1(hd = 0)
+										        //    /   \
+											// (hd = -1)(hd = +1)
+											//    2       3
+											//   / \     / \
+											//(hd = -2)  0  0(hd = +2)
+											//  4        5  6     7
 
 
 
