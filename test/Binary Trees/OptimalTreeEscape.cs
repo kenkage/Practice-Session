@@ -1,20 +1,20 @@
 ﻿using System;
 namespace test.BinaryTrees
 {
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
+    //public class TreeNode
+    //{
+    //    public int val;
+    //    public TreeNode left;
+    //    public TreeNode right;
 
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-	public class OptimalTreeEscape
+    //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+    //    {
+    //        this.val = val;
+    //        this.left = left;
+    //        this.right = right;
+    //    }
+    //}
+    public class OptimalTreeEscape
 	{
         static void Main(string[] args)
         {
@@ -50,7 +50,7 @@ namespace test.BinaryTrees
                     current.left = new TreeNode(values[i].Value);
                     queue.Enqueue(current.left);
                 }
-                i++;
+                i++;    
 
                 if (i < values.Count && values[i] != null)
                 {
