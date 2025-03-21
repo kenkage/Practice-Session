@@ -403,3 +403,24 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+.DS_Store
+test/bin/Debug/net7.0/test.dll
+test/bin/Debug/net7.0/test.pdb
+test/obj/Debug/net7.0/ref/test.dll
+test/obj/Debug/net7.0/refint/test.dll
+test/obj/Debug/net7.0/test.dll
+test/obj/Debug/net7.0/test.csproj.CoreCompileInputs.cache
+.DS_Store
+test/bin/Debug/net7.0/test.dll
+test/bin/Debug/net7.0/test.pdb
+test/obj/Debug/net7.0/ref/test.dll
+test/obj/Debug/net7.0/refint/test.dll
+test/obj/Debug/net7.0/test.dll
+test/obj/Debug/net7.0/test.csproj.CoreCompileInputs.cache
+.DS_Store
+test/bin/Debug/net7.0/test.dll
+test/bin/Debug/net7.0/test.pdb
+test/obj/Debug/net7.0/ref/test.dll
+test/obj/Debug/net7.0/refint/test.dll
+test/obj/Debug/net7.0/test.dll
+test/obj/Debug/net7.0/test.csproj.CoreCompileInputs.cache

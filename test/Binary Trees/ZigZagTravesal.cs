@@ -15,56 +15,35 @@ namespace test.BinaryTrees
     //    }
     //}
 
-    public class ZigZagTraversal
+    public class ZigZagTravesal
 	{
+        private int ans = 0;
         //static void Main(string[] args)
         //{
         //    TreeNode root = BuildTree();
 
-        //    ZigZagTraversal sol = new ZigZagTraversal();
-        //    int result = sol.LongestZigzag(root);
+        //    ZigZagTravesal sol = new ZigZagTravesal();
+        //    int result = sol.maxZigzagStudents(root);
         //    Console.WriteLine(result);
         //}
 
-        private int maxZigzagLength = 0;
-
-        public int LongestZigzag(TreeNode root)
+        public int maxZigzagStudents(TreeNode root)
         {
-            if (root == null) return 0;
-
-            // Start zigzag from both the left and right child of the root
-            ZigzagHelper(root, 1, true);  // Initial move left
-            ZigzagHelper(root, 1, false); // Initial move right
-
-            return maxZigzagLength;
+            dfs(root, 1, 1);
+            return ans;
         }
 
-        private void ZigzagHelper(TreeNode node, int length, bool isLeft)
+        private void dfs(TreeNode root, int l, int r)
         {
-            if (node == null) return;
-
-            // Update maximum zigzag length
-            maxZigzagLength = Math.Max(maxZigzagLength, length);
-
-            if (isLeft)
+            if (root == null)
             {
-                // Continue zigzag to the right
-                ZigzagHelper(node.right, length + 1, false);
-                // Restart zigzag on the left
-                // The path length is reset to 1 because this is the start of a new ZigZag path originating from the current node’s right child.
-                // This means the current node is treated as the start of a fresh ZigZag traversal.
-                ZigzagHelper(node.left, 1, true);
+                return;
             }
-            else
-            {
-                // Continue zigzag to the left
-                ZigzagHelper(node.left, length + 1, true);
-                // Restart zigzag on the right
-                ZigzagHelper(node.right, 1, false);
-            }
+            ans = Math.Max(ans, Math.Max(l, r));
+            dfs(root.left, r + 1, 0);
+            dfs(root.right, 0, l + 1);
         }
 
-        // Method to take user input and construct the binary tree
         public static TreeNode BuildTree()
         {
             // Console.WriteLine("Enter tree nodes in level order (use 'N' for null nodes):");
@@ -102,7 +81,6 @@ namespace test.BinaryTrees
 
             return root;
         }
-
     }
 }
 
