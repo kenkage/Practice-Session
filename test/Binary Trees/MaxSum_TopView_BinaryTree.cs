@@ -73,14 +73,18 @@ namespace test.BinaryTrees
             if (root == null) return 0;
 
             Dictionary<int, int> topViewMap = new Dictionary<int, int>();
-            Queue<(TreeNode node, int hd)> queue = new Queue<(TreeNode, int)>();
+            Queue<(TreeNode node, int hd)> queue = new Queue<(TreeNode, int)>(); //hd - horizontal distance
             queue.Enqueue((root, 0));
 
             while (queue.Count > 0)
+
+
             {
                 var (node, hd) = queue.Dequeue();
 
-                if (!topViewMap.ContainsKey(hd))
+                if (!topViewMap.ContainsKey(hd))                                        // It'll igonre the node 5 & 6 because 5 & 6 would be having hd as 0
+                                                                                        // and hd 0 has already been inserted in topViewMap with root node.
+																						// Therefore, performance.
                 {
                     topViewMap[hd] = node.val;
                 }
@@ -88,6 +92,15 @@ namespace test.BinaryTrees
                 if (node.left != null) queue.Enqueue((node.left, hd - 1));
                 if (node.right != null) queue.Enqueue((node.right, hd + 1));
             }
+																						  //     1(hd = 0)
+																						  //    /   \
+																						  // (hd = -1)(hd = +1)
+																						  //    2       3
+																						  //   / \     / \
+																						  //(hd = -2)  0  0(hd = +2)
+																						  //  4        5  6     7
+
+
 
             int[] topViewValues = new List<int>(topViewMap.Values).ToArray();
             return MaxSubarraySum(topViewValues);
