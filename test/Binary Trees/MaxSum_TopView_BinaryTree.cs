@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace test.BinaryTrees
 {
 	public class TreeNode
@@ -17,7 +19,7 @@ namespace test.BinaryTrees
 
 	public class MaxSum_TopView_BinaryTree
 	{
-		static void main(string[] args)
+		static void Main(string[] args)
 		{
             Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
 			List<int?> values = new List<int?>();
@@ -25,10 +27,12 @@ namespace test.BinaryTrees
 			string[] inputs = Console.ReadLine().Split();
 			foreach(string input in inputs)
 			{
-				values.Add(input == "-1" ? null : int.Parse(input));
+				values.Add(input == "-1" ? (int?)null : int.Parse(input));
 			}
 
 			TreeNode root = BuildTreeFromInput(values);
+			Solution solution = new Solution();
+			Console.WriteLine(solution.MaxSumTopView(root));
         }
 
         private static TreeNode BuildTreeFromInput(List<int?> values)
@@ -59,6 +63,46 @@ namespace test.BinaryTrees
 				i++;
 			}
 			return root;
+        }
+    }
+
+    public class Solution
+    {
+        public int MaxSumTopView(TreeNode root)
+        {
+            if (root == null) return 0;
+
+            Dictionary<int, int> topViewMap = new Dictionary<int, int>();
+            Queue<(TreeNode node, int hd)> queue = new Queue<(TreeNode, int)>();
+            queue.Enqueue((root, 0));
+
+            while (queue.Count > 0)
+            {
+                var (node, hd) = queue.Dequeue();
+
+                if (!topViewMap.ContainsKey(hd))
+                {
+                    topViewMap[hd] = node.val;
+                }
+
+                if (node.left != null) queue.Enqueue((node.left, hd - 1));
+                if (node.right != null) queue.Enqueue((node.right, hd + 1));
+            }
+
+            int[] topViewValues = new List<int>(topViewMap.Values).ToArray();
+            return MaxSubarraySum(topViewValues);
+        }
+
+        private int MaxSubarraySum(int[] arr)
+        {
+            int maxSum = arr[0], currentSum = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                currentSum = Math.Max(arr[i], currentSum + arr[i]);
+                maxSum = Math.Max(maxSum, currentSum);
+            }
+            return maxSum;
         }
     }
 }
