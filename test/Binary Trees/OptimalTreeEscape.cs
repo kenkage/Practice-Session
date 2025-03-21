@@ -69,8 +69,8 @@ namespace test.BinaryTrees
             int leftDepth = GetLeftDepth(root);
             int rightDepth = GetRightDepth(root);
 
-            if (leftDepth < rightDepth) return -1;
-            if (rightDepth < leftDepth) return 1;
+            if (leftDepth < rightDepth) return -1; //left escapes first
+            if (rightDepth < leftDepth) return 1;  //right escaped first
             return 0;
         }
 
