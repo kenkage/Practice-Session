@@ -17,6 +17,8 @@ namespace test.BinaryTrees
 
     public class WatchmenOfBinaryTree
 	{
+        static int watchmen;
+
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
@@ -29,6 +31,7 @@ namespace test.BinaryTrees
             }
 
             TreeNode root = BuildTreeFromInput(values);
+            Console.WriteLine(MinWatchmen(root));
         }
 
         private static TreeNode BuildTreeFromInput(List<int?> values)
@@ -59,6 +62,29 @@ namespace test.BinaryTrees
                 i++;
             }
             return root;
+        }
+
+
+        public static int MinWatchmen(TreeNode root)
+        {
+            watchmen = 0;
+            return (DFS(root) == 0) ? watchmen + 1 : watchmen;  //node is not covered. Case (0),
+        }
+
+        private static int DFS(TreeNode node)
+        {
+            if (node == null) return 2; // Node is covered Case (2)
+
+            int left = DFS(node.left);
+            int right = DFS(node.right);
+
+            if (left == 0 || right == 0) //node is not covered. Case (0),
+            {
+                watchmen++;
+                return 1; // This node is a watchman Ca se(1)
+            }
+
+            return (left == 1 || right == 1) ? 2 : 0; //If any child has a watchman Case(1), this node is covered case(2), else node is not covered. Case (0)
         }
     }
 }
