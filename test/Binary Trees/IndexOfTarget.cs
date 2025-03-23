@@ -3,41 +3,41 @@ using System.Reflection;
 
 namespace test.BinaryTrees
 {
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left, right;
+    //public class TreeNode
+    //{
+    //    public int val;
+    //    public TreeNode left, right;
 
-        public TreeNode(int val = 0)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+    //    public TreeNode(int val = 0)
+    //    {
+    //        this.val = val;
+    //        this.left = left;
+    //        this.right = right;
+    //    }
+    //}
 
     public class IndexOfTarget
 	{
         public static TreeNode root;
 
-		static void Main(string[] stirngs)
-        {
-            Console.WriteLine("Enter number of nodes in BST:");
-            int n = int.Parse(Console.ReadLine());
+		//static void Main(string[] stirngs)
+  //      {
+  //          Console.WriteLine("Enter number of nodes in BST:");
+  //          int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
-            string[] inputs = Console.ReadLine().Split();
+  //          Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
+  //          string[] inputs = Console.ReadLine().Split();
 
-            foreach(string s in inputs)
-            {
-                Insert(int.Parse(s));
-            }
+  //          foreach(string s in inputs)
+  //          {
+  //              Insert(int.Parse(s));
+  //          }
             
-            Console.WriteLine("Enter target integer:");
-            int target = int.Parse(Console.ReadLine());
+  //          Console.WriteLine("Enter target integer:");
+  //          int target = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(FindInOrderIndex(target));
-        }
+  //          Console.WriteLine(FindInOrderIndex(target));
+  //      }
 
         private static void Insert(int value)
         {
