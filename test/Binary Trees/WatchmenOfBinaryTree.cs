@@ -1,19 +1,19 @@
 ﻿using System;
 namespace test.BinaryTrees
 {
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
+    //public class TreeNode
+    //{
+    //    public int val;
+    //    public TreeNode left;
+    //    public TreeNode right;
 
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+    //    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+    //    {
+    //        this.val = val;
+    //        this.left = left;
+    //        this.right = right;
+    //    }
+    //}
 
     public class WatchmenOfBinaryTree
 	{
@@ -81,7 +81,7 @@ namespace test.BinaryTrees
             if (left == 0 || right == 0) //node is not covered. Case (0),
             {
                 watchmen++;
-                return 1; // This node is a watchman Ca se(1)
+                return 1; // This node is a watchman Case(1)
             }
 
             return (left == 1 || right == 1) ? 2 : 0; //If any child has a watchman Case(1), this node is covered case(2), else node is not covered. Case (0)
