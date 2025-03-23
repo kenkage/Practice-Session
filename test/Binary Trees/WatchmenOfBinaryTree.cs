@@ -19,20 +19,20 @@ namespace test.BinaryTrees
 	{
         static int watchmen;
 
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
-            List<int?> values = new List<int?>();
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
+        //    List<int?> values = new List<int?>();
 
-            string[] inputs = Console.ReadLine().Split();
-            foreach (string input in inputs)
-            {
-                values.Add(input == "-1" ? (int?)null : int.Parse(input));
-            }
+        //    string[] inputs = Console.ReadLine().Split();
+        //    foreach (string input in inputs)
+        //    {
+        //        values.Add(input == "-1" ? (int?)null : int.Parse(input));
+        //    }
 
-            TreeNode root = BuildTreeFromInput(values);
-            Console.WriteLine(MinWatchmen(root));
-        }
+        //    TreeNode root = BuildTreeFromInput(values);
+        //    Console.WriteLine(MinWatchmen(root));
+        //}
 
         private static TreeNode BuildTreeFromInput(List<int?> values)
         {
