@@ -75,25 +75,25 @@ class Program
         return root;
     }
 
-    static void Main()
-    {
-        Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
-        List<int?> values = new List<int?>();
+    //static void Main()
+    //{
+    //    Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
+    //    List<int?> values = new List<int?>();
 
-        string[] inputs = Console.ReadLine().Split();
-        foreach (string input in inputs)
-        {
-            values.Add(input == "-1" ? (int?)null : int.Parse(input));
-        }
+    //    string[] inputs = Console.ReadLine().Split();
+    //    foreach (string input in inputs)
+    //    {
+    //        values.Add(input == "-1" ? (int?)null : int.Parse(input));
+    //    }
 
-        TreeNode root = BuildTreeFromInput(values);
-        Solution solution = new Solution();
-        IList<IList<int>> result = solution.LevelOrder(root);
+    //    TreeNode root = BuildTreeFromInput(values);
+    //    Solution solution = new Solution();
+    //    IList<IList<int>> result = solution.LevelOrder(root);
 
-        Console.WriteLine("Level Order Traversal:");
-        foreach (var level in result)
-        {
-            Console.WriteLine(string.Join(" ", level));
-        }
-    }
+    //    Console.WriteLine("Level Order Traversal:");
+    //    foreach (var level in result)
+    //    {
+    //        Console.WriteLine(string.Join(" ", level));
+    //    }
+    //}
 }
