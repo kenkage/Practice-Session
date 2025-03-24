@@ -3,14 +3,14 @@ namespace test.Sorting
 {
 	public class waveArray
 	{
-		static void Main(string[] args)
-		{
-			int n = int.Parse(Console.ReadLine());
+		//static void Main(string[] args)
+		//{
+		//	int n = int.Parse(Console.ReadLine());
 
-			int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+		//	int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-			FormWaveArray(arr);
-        }
+		//	FormWaveArray(arr);
+  //      }
 
 		static void FormWaveArray(int[] arr)
 		{
