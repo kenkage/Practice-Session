@@ -74,7 +74,9 @@ namespace test.BinaryTrees
             InOrderTraversal(root, nodes);
 
             int n = nodes.Count;
-            for (int i = 0; i < n - 2; i++)
+            for (int i = 0; i < n - 2; i++) //We need to find three numbers in the sorted list of BST values that multiply to k
+                                            //The two-pointer approach is used after picking the first number, requiring two additional numbers to be found in the array.
+                                            //If i goes beyond n-2, there wouldn’t be enough elements left for a valid triplet.
             {
                 int left = i + 1, right = n - 1;
                 while (left < right)
