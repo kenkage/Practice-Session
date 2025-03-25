@@ -5,14 +5,14 @@ namespace test.Sorting
 {
 	public class RestaurantTip
 	{
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine()); // Read number of friends
-            int[] food = Console.ReadLine().Split().Select(int.Parse).ToArray(); // Food consumption
-            int[] budget = Console.ReadLine().Split().Select(int.Parse).ToArray(); // Budget
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine()); // Read number of friends
+        //    int[] food = Console.ReadLine().Split().Select(int.Parse).ToArray(); // Food consumption
+        //    int[] budget = Console.ReadLine().Split().Select(int.Parse).ToArray(); // Budget
 
-            Console.WriteLine(MaxDays(n, food, budget)); // Output max days
-        }
+        //    Console.WriteLine(MaxDays(n, food, budget)); // Output max days
+        //}
 
         static int MaxDays(int n, int[] food, int[] budget)
         {
