@@ -28,22 +28,22 @@ namespace test.Sorting
             return swapCount;
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] anishStones = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            int[] binishStones = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] anishStones = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        //    int[] binishStones = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            int anishSwaps = CountBubbleSortSwaps(anishStones);
-            int binishSwaps = CountBubbleSortSwaps(binishStones);
+        //    int anishSwaps = CountBubbleSortSwaps(anishStones);
+        //    int binishSwaps = CountBubbleSortSwaps(binishStones);
 
-            if (anishSwaps < binishSwaps)
-                Console.WriteLine("Anish");
-            else if (anishSwaps > binishSwaps)
-                Console.WriteLine("Binish");
-            else
-                Console.WriteLine("Tie");
-        }
+        //    if (anishSwaps < binishSwaps)
+        //        Console.WriteLine("Anish");
+        //    else if (anishSwaps > binishSwaps)
+        //        Console.WriteLine("Binish");
+        //    else
+        //        Console.WriteLine("Tie");
+        //}
     }
 }
 
