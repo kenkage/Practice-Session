@@ -16,6 +16,12 @@ class MergeSortProgram
         Array.Copy(arr, left, leftArr, 0, n1);
         Array.Copy(arr, mid + 1, rightArr, 0, n2);
 
+        //for (int i1 = 0; i1 < n1; i1++)
+        //    leftArr[i1] = arr[left + i1];
+
+        //for (int j1 = 0; j1 < n2; j1++)
+        //    rightArr[j1] = arr[mid + 1 + j1];
+
         int i = 0, j = 0, k = left;
 
         // Merge the temp arrays back into arr[left...right]
@@ -49,16 +55,16 @@ class MergeSortProgram
         }
     }
 
-    static void Main()
-    {
-        // Read input
-        int n = int.Parse(Console.ReadLine());
-        int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+    //static void Main()
+    //{
+    //    // Read input
+    //    int n = int.Parse(Console.ReadLine());
+    //    int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-        // Apply merge sort
-        MergeSort(arr, 0, n - 1);
+    //    // Apply merge sort
+    //    MergeSort(arr, 0, n - 1);
 
-        // Print sorted array
-        Console.WriteLine(string.Join(" ", arr));
-    }
+    //    // Print sorted array
+    //    Console.WriteLine(string.Join(" ", arr));
+    //}
 }
