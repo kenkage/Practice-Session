@@ -15,7 +15,7 @@ namespace test.Sorting
                 vivekStones += piles[i]; // Vivek gets the second-largest in every triplet
             }
 
-            return vivekStones;
+            return vivekStones; 
         }
 
         //public static void MaxStones(int[] piles)
