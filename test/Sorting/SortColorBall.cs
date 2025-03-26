@@ -24,15 +24,15 @@ namespace test.Sorting
             }
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            int maxColor = arr.Max(); // Get the highest number in the input
-            SortColors(arr, maxColor);
-            Console.WriteLine(string.Join(" ", arr));
-        }
+        //    int maxColor = arr.Max(); // Get the highest number in the input
+        //    SortColors(arr, maxColor);
+        //    Console.WriteLine(string.Join(" ", arr));
+        //}
     }
 }
 

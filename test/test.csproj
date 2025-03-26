@@ -17,6 +17,7 @@
     <None Remove="TGP-C5\" />
     <None Remove="Binary Trees\" />
     <None Remove="Sorting\" />
+    <None Remove="Searching\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
@@ -28,5 +29,6 @@
     <Folder Include="TGP-C5\" />
     <Folder Include="Binary Trees\" />
     <Folder Include="Sorting\" />
+    <Folder Include="Searching\" />
   </ItemGroup>
 </Project>
