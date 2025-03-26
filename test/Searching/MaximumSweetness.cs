@@ -27,7 +27,7 @@ namespace test.Searching
         {
             Array.Sort(prices); // Sort prices
 
-            int low = 1, high = prices[^1] - prices[0]; // Max possible range
+            int low = 1, high = prices[prices.Length - 1] - prices[0]; // Max possible sweetness range
             int maxSweetness = 0;
 
             while (low <= high)
@@ -48,14 +48,14 @@ namespace test.Searching
             return maxSweetness;
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] prices = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            int k = int.Parse(Console.ReadLine());
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] prices = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        //    int k = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(MaxSweetness(prices, k));
-        }
+        //    Console.WriteLine(MaxSweetness(prices, k));
+        //}
     }
 }
 
