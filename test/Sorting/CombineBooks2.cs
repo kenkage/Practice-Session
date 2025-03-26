@@ -3,22 +3,22 @@ namespace test.Sorting
 {
 	public class CombineBooks2
 	{
-        static void Main()
-        {
-            // Read input
-            string[] sizes = Console.ReadLine().Split();
-            int n = int.Parse(sizes[0]);
-            int m = int.Parse(sizes[1]);
+        //static void Main()
+        //{
+        //    // Read input
+        //    string[] sizes = Console.ReadLine().Split();
+        //    int n = int.Parse(sizes[0]);
+        //    int m = int.Parse(sizes[1]);
 
-            string[] alara = Console.ReadLine().Split();
-            string[] balin = Console.ReadLine().Split();
+        //    string[] alara = Console.ReadLine().Split();
+        //    string[] balin = Console.ReadLine().Split();
 
-            // Merge the two sorted lists
-            string[] merged = MergeSortedArrays(alara, balin, n, m);
+        //    // Merge the two sorted lists
+        //    string[] merged = MergeSortedArrays(alara, balin, n, m);
 
-            // Print the merged result
-            Console.WriteLine(string.Join(" ", merged));
-        }
+        //    // Print the merged result
+        //    Console.WriteLine(string.Join(" ", merged));
+        //}
 
         static string[] MergeSortedArrays(string[] arr1, string[] arr2, int n, int m)
         {

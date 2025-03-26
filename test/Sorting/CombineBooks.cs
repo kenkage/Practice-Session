@@ -3,28 +3,28 @@ namespace test.Sorting
 {
     class CombineBooks
     {
-        static void Main()
-        {
-            // Read input sizes
-            string[] sizes = Console.ReadLine().Split();
-            int n = int.Parse(sizes[0]);
-            int m = int.Parse(sizes[1]);
+        //static void Main()
+        //{
+        //    // Read input sizes
+        //    string[] sizes = Console.ReadLine().Split();
+        //    int n = int.Parse(sizes[0]);
+        //    int m = int.Parse(sizes[1]);
 
-            // Read book inventories
-            string[] alaraBooks = Console.ReadLine().Split();
-            string[] balinBooks = Console.ReadLine().Split();
+        //    // Read book inventories
+        //    string[] alaraBooks = Console.ReadLine().Split();
+        //    string[] balinBooks = Console.ReadLine().Split();
 
-            // Merge the two arrays
-            string[] mergedBooks = new string[n + m];
-            Array.Copy(alaraBooks, 0, mergedBooks, 0, n);
-            Array.Copy(balinBooks, 0, mergedBooks, n, m);
+        //    // Merge the two arrays
+        //    string[] mergedBooks = new string[n + m];
+        //    Array.Copy(alaraBooks, 0, mergedBooks, 0, n);
+        //    Array.Copy(balinBooks, 0, mergedBooks, n, m);
 
-            // Sort the merged array using Merge Sort
-            MergeSort(mergedBooks, 0, mergedBooks.Length - 1);
+        //    // Sort the merged array using Merge Sort
+        //    MergeSort(mergedBooks, 0, mergedBooks.Length - 1);
 
-            // Print sorted book list
-            Console.WriteLine(string.Join(" ", mergedBooks));
-        }
+        //    // Print sorted book list
+        //    Console.WriteLine(string.Join(" ", mergedBooks));
+        //}
 
         // Merge Sort function
         static void MergeSort(string[] arr, int left, int right)
