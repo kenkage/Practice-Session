@@ -1,4 +1,25 @@
-﻿using System;
+﻿
+
+
+
+/* This problem can be approached in two ways.
+   1. Merge two sorted arrays and then find median.
+
+		Time Complexity: O(m + n)
+		•	We must iterate through both arrays to merge them, which violates the O(log(m + n)) constraint.
+		•	Space Complexity: O(m + n)
+		•	We need extra space for the merged array.
+
+   2. Binary Search
+
+		Instead of merging, we use binary search on the smaller array.
+		•	Time Complexity: O(log(min(m, n)))
+		•	Much faster than O(m + n).
+		•	Space Complexity: O(1)
+		•	No extra storage required.
+
+*/
+using System;
 namespace test.Searching
 {
 	public class MedianOf2SortedArray
