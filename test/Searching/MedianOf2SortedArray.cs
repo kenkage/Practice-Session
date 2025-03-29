@@ -18,6 +18,8 @@
 		•	Space Complexity: O(1)
 		•	No extra storage required.
 
+Ref: https://www.youtube.com/watch?v=jDJuW7tSxio
+
 */
 using System;
 namespace test.Searching
@@ -32,37 +34,58 @@ namespace test.Searching
 			int[] nums1 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 			int[] nums2  = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-			int[] merged = MergeSortedArray(nums1, nums1.Length, nums2, nums2.Length);
-			FindMedian(merged);
+            Console.WriteLine(FindMedianSortedArrays(nums1, nums2));
         }
 
-        private static void FindMedian(int[] merged)
+        private static int FindMedianSortedArrays(int[] a, int[] b)
         {
-            throw new NotImplementedException();
-        }
-
-        static int[] MergeSortedArray(int[] nums1, int n1, int[] nums2, int n2)
-		{
-			int[] result = new int[n1 + n2];
-
-			int i = 0, j = 0, k = 0;
-
-			while(i<n1 && j < n2)
+            // Ensure nums1 is the smaller array
+            if (a.Length > b.Length)
 			{
-				if (nums1[i] < nums2[j])
-					result[k++] = nums1[i++];
-				else
-					result[k++] = nums2[j++];
+				//return	FindMedianSortedArrays(b, a);
+				int[] temp = a;
+				a = b;
+				b = temp;
+
 			}
 
-			while (i < n1)
-				result[k++] = nums1[i++];
+			int lo = 0, hi = a.Length, te = a.Length + b.Length;
+			
+			while(lo <= hi)
+			{
+                int aLeft = (lo + hi) / 2;
+                int bLeft = (te + 1) / 2 - aLeft;
+				int alm1 = (aLeft == 0) ? int.MinValue : a[aLeft - 1];
+				int al = (aLeft == a.Length) ? int.MaxValue : a[aLeft];
+				int blm1 = (bLeft == 0) ? int.MinValue : b[bLeft - 1];
+				int bl = (bLeft == b.Length) ? int.MaxValue : b[bLeft];
 
-			while (j < n2)
-				result[k++] = nums2[j++];
-
-			return result;
-		}
-	}
+                if (alm1 <= bl && blm1 <= al) //Valid Scenario
+				{
+					int median;
+					if (te % 2 == 0)
+					{
+                        int lMax = Math.Max(alm1, blm1);
+                        int rMin = Math.Min(al, bl);
+						median = (lMax + rMin) / 2;
+                    } else
+					{
+						int lMax = Math.Max(alm1, blm1);
+						median = lMax;
+					}
+					return median;
+				}
+				else if (alm1 > bl)
+				{ //there're more elements to be picked in left part 'b' array and to do that automatically we'll reduce the hi of 'a' array
+					hi = aLeft - 1;
+				}
+				else if (blm1 > al)
+				{ // there're more elements to be picked in left part of 'a' array and to do that automatically we'll increase the low of 'a' array
+					lo = aLeft + 1;
+				}
+            }
+            return -1;
+        }
+    }
 }
 
