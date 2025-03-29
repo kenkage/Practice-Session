@@ -26,16 +26,16 @@ namespace test.Searching
 {
 	public class MedianOf2SortedArray
 	{
-		static void Main()
-		{
-			int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-			int m = arr[0], n = arr[1];
+		//static void Main()
+		//{
+		//	int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+		//	int m = arr[0], n = arr[1];
 
-			int[] nums1 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-			int[] nums2  = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+		//	int[] nums1 = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+		//	int[] nums2  = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(FindMedianSortedArrays(nums1, nums2));
-        }
+  //          Console.WriteLine(FindMedianSortedArrays(nums1, nums2));
+  //      }
 
         private static int FindMedianSortedArrays(int[] a, int[] b)
         {
