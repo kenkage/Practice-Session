@@ -37,16 +37,16 @@ namespace test.Arrays
                 Console.WriteLine("No subarray with sum 0 found.");
         }
 
-        static void Main()
-        {
-            Console.WriteLine("Enter the size of the array:");
-            int n = int.Parse(Console.ReadLine());
+        //static void Main()
+        //{
+        //    Console.WriteLine("Enter the size of the array:");
+        //    int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the array elements:");
-            int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    Console.WriteLine("Enter the array elements:");
+        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            FindZeroSumSubarrays(nums);
-        }
+        //    FindZeroSumSubarrays(nums);
+        //}
     }
 }
 
