@@ -51,17 +51,17 @@ namespace test.Arrays
             return true;
         }
 
-        static void Main()
-        {
-            Console.WriteLine("Enter string S:");
-            string S = Console.ReadLine();
+        //static void Main()
+        //{
+        //    Console.WriteLine("Enter string S:");
+        //    string S = Console.ReadLine();
 
-            Console.WriteLine("Enter string C:");
-            string C = Console.ReadLine();
+        //    Console.WriteLine("Enter string C:");
+        //    string C = Console.ReadLine();
 
-            int result = CountAnagrams(S, C);
-            Console.WriteLine($"Output: {result}");
-        }
+        //    int result = CountAnagrams(S, C);
+        //    Console.WriteLine($"Output: {result}");
+        //}
     }
 }
 
