@@ -31,18 +31,18 @@ namespace test.Arrays
                 Console.WriteLine(string.Join(" ", result));
         }
 
-        static void Main()
-        {
-            // Read input
-            Console.WriteLine("Enter the size of the array:");
-            int n = int.Parse(Console.ReadLine());
+        //static void Main()
+        //{
+        //    // Read input
+        //    Console.WriteLine("Enter the size of the array:");
+        //    int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the array elements:");
-            int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    Console.WriteLine("Enter the array elements:");
+        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            // Call function to find balanced indexes
-            FindBalancedIndexes(nums);
-        }
+        //    // Call function to find balanced indexes
+        //    FindBalancedIndexes(nums);
+        //}
     }
 }
 
