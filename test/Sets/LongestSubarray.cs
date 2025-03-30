@@ -30,13 +30,13 @@ namespace test.Sets
             return maxLength;
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(FindMaxLength(nums));
-        }
+        //    Console.WriteLine(FindMaxLength(nums));
+        //}
     }
 }
 

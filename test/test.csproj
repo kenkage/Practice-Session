@@ -19,6 +19,7 @@
     <None Remove="Sorting\" />
     <None Remove="Searching\" />
     <None Remove="Strings\" />
+    <None Remove="ProblemSolving\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
@@ -33,5 +34,6 @@
     <Folder Include="Searching\" />
     <Folder Include="Strings\" />
     <Folder Include="Arrays\" />
+    <Folder Include="ProblemSolving\" />
   </ItemGroup>
 </Project>
