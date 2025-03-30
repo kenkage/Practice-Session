@@ -23,12 +23,12 @@ namespace test.ProblemSolving
             return minSum;
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-            Console.WriteLine(MinCostToDivideArray(nums));
-        }
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    Console.WriteLine(MinCostToDivideArray(nums));
+        //}
     }
 }
 
