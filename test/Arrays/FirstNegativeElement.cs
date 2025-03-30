@@ -40,18 +40,18 @@ namespace test.Arrays
             Console.WriteLine(string.Join(" ", result));
         }
 
-        static void Main()
-        {
-            Console.Write("Enter window size (k): ");
-            int[] ip = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-            int n = ip[0];
-            int k = ip[1];
+        //static void Main()
+        //{
+        //    Console.Write("Enter window size (k): ");
+        //    int[] ip = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    int n = ip[0];
+        //    int k = ip[1];
 
-            Console.Write("Enter the array elements (space-separated): ");
-            int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    Console.Write("Enter the array elements (space-separated): ");
+        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            FirstNegativeInEveryWindow(arr, k);
-        }
+        //    FirstNegativeInEveryWindow(arr, k);
+        //}
     }
 }
 
