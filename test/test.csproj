@@ -18,6 +18,7 @@
     <None Remove="Binary Trees\" />
     <None Remove="Sorting\" />
     <None Remove="Searching\" />
+    <None Remove="Strings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
@@ -30,5 +31,7 @@
     <Folder Include="Binary Trees\" />
     <Folder Include="Sorting\" />
     <Folder Include="Searching\" />
+    <Folder Include="Strings\" />
+    <Folder Include="Arrays\" />
   </ItemGroup>
 </Project>

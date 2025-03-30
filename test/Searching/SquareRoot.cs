@@ -31,11 +31,11 @@ namespace test.Searching
             return (n - ans * ans <= (ans + 1) * (ans + 1) - n) ? ans : ans + 1;
         }
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine(SquareRoot(n));
-        }
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    Console.WriteLine(SquareRoot(n));
+        //}
     }
 }
 
