@@ -16,7 +16,7 @@ namespace test.Arrays
             // Iterate and check when prefixSum == suffixSum
             for (int i = 0; i < n; i++)
             {
-                int suffixSum = totalSum - prefixSum;
+                int suffixSum = totalSum - prefixSum - nums[i];
 
                 if (prefixSum == suffixSum)
                     result.Add(i);
