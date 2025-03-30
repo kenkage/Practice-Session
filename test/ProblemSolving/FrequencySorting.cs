@@ -88,12 +88,12 @@ namespace test.ProblemSolving
 
             return result;
         }
-        static void Main()
-        {
-            string s = Console.ReadLine();
+        //static void Main()
+        //{
+        //    string s = Console.ReadLine();
 
-            Console.WriteLine(FrequencySort(s));
-        }
+        //    Console.WriteLine(FrequencySort(s));
+        //}
     }
 }
 
