@@ -6,20 +6,22 @@ namespace test.Stack
         public static int CheckTunnelSafety(int[] IN, int[] OUT, int n)
         {
             Stack<int> stack = new Stack<int>();
-            int outIndex = 0;
 
             foreach (int worker in IN)
             {
                 stack.Push(worker);
-
-                while (stack.Count > 0 && stack.Peek() == OUT[outIndex])
-                {
-                    stack.Pop();
-                    outIndex++;
-                }
             }
 
-            return stack.Count == 0 ? 1 : 0;
+            foreach (int worker in OUT)
+            {
+                if (stack.Count == 0 || stack.Peek() != worker)
+                {
+                    return 0; // Order violation
+                }
+                stack.Pop();
+            }
+
+            return 1;
         }
 
         public static void Main()
