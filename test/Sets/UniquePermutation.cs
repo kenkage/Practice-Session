@@ -5,7 +5,7 @@ namespace test.Sets
 {
 	public class UniquePermutation
 	{
-        static List<string> finalRes = new List<string>();
+        static List<string> finalRes = new List<string>(); // use Hashset to aviod duplicates.
 
         static void PrintPermutation(string ques, string asf)
         {
@@ -19,10 +19,10 @@ namespace test.Sets
             for (int i = 0; i < ques.Length; i++)
             {
                 char ch = ques[i];
-                string lPart = ques.Substring(0, i);
+                string lPart = ques.Substring(0, i); 
                 string rPart = ques.Substring(i + 1);
                 string roq = lPart + rPart;
-                PrintPermutation(roq, asf + ch);
+                PrintPermutation(roq, asf + ch);     
             }
         }
 
@@ -35,4 +35,3 @@ namespace test.Sets
         //}
     }
 }
-

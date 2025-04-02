@@ -34,18 +34,18 @@ namespace test.ProblemSolving
             }
         }
 
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-            SortColors(nums);
-            Console.WriteLine("[" + string.Join(",", nums) + "]");
-            //foreach (int num in nums)
-            //{
-            //  Console.Write(num + " ");
-            //}
-            //Console.WriteLine();
-        }
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    SortColors(nums);
+        //    Console.WriteLine("[" + string.Join(",", nums) + "]");
+        //    //foreach (int num in nums)
+        //    //{
+        //    //  Console.Write(num + " ");
+        //    //}
+        //    //Console.WriteLine();
+        //}
     }
 }
 
