@@ -24,14 +24,14 @@ namespace test.Stack
             return 1;
         }
 
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] IN = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-            int[] OUT = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] IN = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //    int[] OUT = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(CheckTunnelSafety(IN, OUT, n));
-        }
+        //    Console.WriteLine(CheckTunnelSafety(IN, OUT, n));
+        //}
     }
 }
 
