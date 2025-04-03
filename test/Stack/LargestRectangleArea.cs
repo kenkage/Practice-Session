@@ -26,13 +26,13 @@ namespace test.Stack
             return maxArea;
         }
 
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] heights = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] heights = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(LargestRectangleArea1(heights));
-        }
+        //    Console.WriteLine(LargestRectangleArea1(heights));
+        //}
     }
 }
 
