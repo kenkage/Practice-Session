@@ -3,13 +3,13 @@ namespace test.Stack
 {
 	public class MaxPartition
 	{
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(MaxPartitions(arr));
-        }
+        //    Console.WriteLine(MaxPartitions(arr));
+        //}
 
         static int MaxPartitions(int[] arr)
         {
