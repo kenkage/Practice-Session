@@ -3,14 +3,14 @@ namespace test.Stack
 {
 	public class KingsLand
 	{
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] land = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] land = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            int[] result = CalculateKingLandValues(n, land);
-            Console.WriteLine(string.Join(" ", result));
-        }
+        //    int[] result = CalculateKingLandValues(n, land);
+        //    Console.WriteLine(string.Join(" ", result));
+        //}
 
         static int[] CalculateKingLandValues(int n, int[] land)
         {
