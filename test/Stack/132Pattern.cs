@@ -32,19 +32,19 @@ namespace test.Stack
             return false;
         }
 
-        public static void Main(string[] args)
-        {
-            int n = int.Parse(Console.ReadLine());
-            string[] input = Console.ReadLine().Split(' ');
-            int[] nums = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                nums[i] = int.Parse(input[i]);
-            }
+        //public static void Main(string[] args)
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    string[] input = Console.ReadLine().Split(' ');
+        //    int[] nums = new int[n];
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        nums[i] = int.Parse(input[i]);
+        //    }
 
-            _32Pattern solution = new _32Pattern();
-            Console.WriteLine(solution.Find132pattern(nums).ToString().ToLower());
-        }
+        //    _32Pattern solution = new _32Pattern();
+        //    Console.WriteLine(solution.Find132pattern(nums).ToString().ToLower());
+        //}
     }
 }
 
