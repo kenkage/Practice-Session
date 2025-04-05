@@ -31,38 +31,38 @@ namespace test.Stack
             return result;
         }
 
-        public static void Main(string[] args)
-        {
-            int n = int.Parse(Console.ReadLine());
+        //public static void Main(string[] args)
+        //{
+        //    int n = int.Parse(Console.ReadLine());
 
-            long[] arr = Console.ReadLine()
-                              .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries) // Handle multiple spaces
-                              .Select(long.Parse)
-                              .ToArray();
+        //    long[] arr = Console.ReadLine()
+        //                      .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries) // Handle multiple spaces
+        //                      .Select(long.Parse)
+        //                      .ToArray();
 
-            if (arr.Length != n)
-            {
-                Console.WriteLine("Error: Number of elements provided does not match the specified size.");
-                return;
-            }
+        //    if (arr.Length != n)
+        //    {
+        //        Console.WriteLine("Error: Number of elements provided does not match the specified size.");
+        //        return;
+        //    }
 
-            long[] leftSmaller = FindNearestSmaller(arr, true);
+        //    long[] leftSmaller = FindNearestSmaller(arr, true);
 
-            long[] rightSmaller = FindNearestSmaller(arr, false);
+        //    long[] rightSmaller = FindNearestSmaller(arr, false);
 
-            // Calculate the maximum absolute difference
-            long maxDifference = 0;
-            for (int i = 0; i < n; i++)
-            {
-                long currentDifference = Math.Abs(leftSmaller[i] - rightSmaller[i]);
-                if (currentDifference > maxDifference)
-                {
-                    maxDifference = currentDifference;
-                }
-                // Or simply: maxDifference = Math.Max(maxDifference, Math.Abs(leftSmaller[i] - rightSmaller[i]));
-            }
-            Console.WriteLine(maxDifference);
-        }
+        //    // Calculate the maximum absolute difference
+        //    long maxDifference = 0;
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        long currentDifference = Math.Abs(leftSmaller[i] - rightSmaller[i]);
+        //        if (currentDifference > maxDifference)
+        //        {
+        //            maxDifference = currentDifference;
+        //        }
+        //        // Or simply: maxDifference = Math.Max(maxDifference, Math.Abs(leftSmaller[i] - rightSmaller[i]));
+        //    }
+        //    Console.WriteLine(maxDifference);
+        //}
     }
 }
 

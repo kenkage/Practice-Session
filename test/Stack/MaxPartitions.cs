@@ -26,7 +26,7 @@ namespace test.Stack
                 }
             }
 
-            return count;
+            return count == 0 ? 1 : count;
         }
     }
 }
