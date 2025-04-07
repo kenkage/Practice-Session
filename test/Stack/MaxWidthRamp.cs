@@ -1,4 +1,6 @@
-﻿using System;
+﻿// https://leetcode.com/problems/maximum-width-ramp/
+
+using System;
 namespace test.Stack
 {
 	public class MaximumWidthRamp
