@@ -3,18 +3,18 @@ namespace test.DynamicProgramming
 {
 	public class EggDrop
 	{
-        public static void Main()
-        {
-            int t = int.Parse(Console.ReadLine());
-            for (int test = 0; test < t; test++)
-            {
-                var input = Console.ReadLine().Split();
-                int eggs = int.Parse(input[0]);
-                int floors = int.Parse(input[1]);
+        //public static void Main()
+        //{
+        //    int t = int.Parse(Console.ReadLine());
+        //    for (int test = 0; test < t; test++)
+        //    {
+        //        var input = Console.ReadLine().Split();
+        //        int eggs = int.Parse(input[0]);
+        //        int floors = int.Parse(input[1]);
 
-                Console.WriteLine(MinMoves(eggs, floors));
-            }
-        }
+        //        Console.WriteLine(MinMoves(eggs, floors));
+        //    }
+        //}
 
         private static int MinMoves(int n, int k)
         {
@@ -46,6 +46,23 @@ namespace test.DynamicProgramming
                 }
             }
             return dp[n, k];
+        }
+
+        static int MinMoves2(int eggs, int floors) // second approach
+        {
+            int[,] dp = new int[floors + 1, eggs + 1];
+            int moves = 0;
+
+            while (dp[moves, eggs] < floors)
+            {
+                moves++;
+                for (int e = 1; e <= eggs; e++)
+                {
+                    dp[moves, e] = dp[moves - 1, e - 1] + dp[moves - 1, e] + 1;
+                }
+            }
+
+            return moves;
         }
     }
 }
