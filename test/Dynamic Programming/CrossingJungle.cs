@@ -5,19 +5,19 @@ namespace test.DynamicProgramming
 	{
         public static int MinimumStartingExp(int[,] grid, int n, int m, int x=0, int y=0)
         {
-            if(x == n-1 || y == m - 1)
+            if(x == n-1 && y == m - 1)
             {
-                return grid[x, y];
+                return grid[x, y];  
             }
             if (x >= n || y >= m)
             {
-                return 0;
+                return int.MinValue;
             }
             int right = MinimumStartingExp(grid, n, m, x + 1, y) + grid[x, y];
             int down = MinimumStartingExp(grid, n, m, x, y + 1) + grid[x, y];
             int max = Math.Max(right, down);
 
-            return 1 - max;
+            return max;
         }
 
         // Tabulation
@@ -27,17 +27,17 @@ namespace test.DynamicProgramming
             dp[0, 0] = grid[0, 0];
             for(int i = 1; i < n; i++)
             {
-                dp[i, 0] = grid[i, 0] + grid[i - 1, 0]; // populating first column of dp array
+                dp[i, 0] = grid[i, 0] + dp[i - 1, 0]; // populating first column of dp array
             }
             for (int i = 1; i < m; i++)
             {
-                dp[0, i] = grid[0, i] + grid[0, i - 1]; // populating first row of dp array
+                dp[0, i] = grid[0, i] + dp[0, i - 1]; // populating first row of dp array
             }
             for(int i=1; i < n; i++)
             {
                 for(int j=1; j < m; j++)
                 {
-                    dp[i, j] = Math.Max(grid[i - 1, j], grid[i, j - 1]) + grid[i, j];
+                    dp[i, j] = Math.Max(dp[i - 1, j], dp[i, j - 1]) + grid[i, j];
                 }
             }
 
@@ -61,8 +61,10 @@ namespace test.DynamicProgramming
                 }
             }
 
-            int result = Solve(grid, n, m);
-            Console.WriteLine(result);
+            //int result = Solve(grid, n, m);
+            int res = MinimumStartingExp(grid, n, m);
+            int result2 = 1 - res;
+            Console.WriteLine(result2);
         }
     }
 }
