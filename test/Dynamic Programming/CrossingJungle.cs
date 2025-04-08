@@ -44,28 +44,28 @@ namespace test.DynamicProgramming
             return 1 - dp[n - 1, m - 1];
         }
 
-        static void Main()
-        {
-            var inputs = Console.ReadLine().Split();
-            int n = int.Parse(inputs[0]);
-            int m = int.Parse(inputs[1]);
+        //static void Main()
+        //{
+        //    var inputs = Console.ReadLine().Split();
+        //    int n = int.Parse(inputs[0]);
+        //    int m = int.Parse(inputs[1]);
 
-            int[,] grid = new int[n, m];
+        //    int[,] grid = new int[n, m];
 
-            for (int i = 0; i < n; i++)
-            {
-                var row = Console.ReadLine().Split();
-                for (int j = 0; j < m; j++)
-                {
-                    grid[i, j] = int.Parse(row[j]);
-                }
-            }
+        //    for (int i = 0; i < n; i++)
+        //    {
+        //        var row = Console.ReadLine().Split();
+        //        for (int j = 0; j < m; j++)
+        //        {
+        //            grid[i, j] = int.Parse(row[j]);
+        //        }
+        //    }
 
-            //int result = Solve(grid, n, m);
-            int res = MinimumStartingExp(grid, n, m);
-            int result2 = 1 - res;
-            Console.WriteLine(result2);
-        }
+        //    //int result = Solve(grid, n, m);
+        //    int res = MinimumStartingExp(grid, n, m);
+        //    int result2 = 1 - res;
+        //    Console.WriteLine(result2);
+        //}
     }
 }
 
