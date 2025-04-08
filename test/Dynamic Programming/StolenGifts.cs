@@ -27,8 +27,8 @@ namespace test.DynamicProgramming
                 if (candidates[i] > target) break; // No need to continue
 
                 current.Add(candidates[i]);
-                Backtrack(candidates, target - candidates[i], i + 1, current, result); // i + 1 since no reuse
-                current.RemoveAt(current.Count - 1); // Backtrack
+                Backtrack(candidates, target - candidates[i], i + 1, current, result); // i + 1 since no reuse i.e. Go deeper with this choice.
+                current.RemoveAt(current.Count - 1); // Backtrack... Undo that choice (so we can try the next option).
             }
         }
 
