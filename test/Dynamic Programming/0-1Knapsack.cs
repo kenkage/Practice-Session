@@ -1,4 +1,6 @@
 ﻿using System;
+
+// https://www.youtube.com/watch?v=bUSaenttI24&t=1341s
 namespace test.DynamicProgramming
 {
 	public class __1Knapsack
