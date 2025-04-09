@@ -32,16 +32,16 @@ namespace test.DynamicProgramming
             }
         }
 
-        static void Main()
-        {
-            string[] line1 = Console.ReadLine().Split();
-            int n = int.Parse(line1[0]);
-            int k = int.Parse(line1[1]);
+        //static void Main()
+        //{
+        //    string[] line1 = Console.ReadLine().Split();
+        //    int n = int.Parse(line1[0]);
+        //    int k = int.Parse(line1[1]);
 
-            int[] gifts = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        //    int[] gifts = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            Console.WriteLine(CombinationSum2(gifts, k));
-        }
+        //    Console.WriteLine(CombinationSum2(gifts, k));
+        //}
     }
 }
 
