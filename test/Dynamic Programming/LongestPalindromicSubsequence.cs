@@ -5,11 +5,11 @@ namespace test.DynamicProgramming
 {
 	public class LongestPalindromicSubsequence
 	{
-		static void Main()
-		{
-            string s = Console.ReadLine();
-            Console.WriteLine(LongestPalindromeSubseq(s));
-        }
+		//static void Main()
+		//{
+  //          string s = Console.ReadLine();
+  //          Console.WriteLine(LongestPalindromeSubseq(s));
+  //      }
 
         private static int LongestPalindromeSubseq(string s)
         {
