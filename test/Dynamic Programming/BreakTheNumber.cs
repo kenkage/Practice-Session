@@ -4,11 +4,11 @@ namespace test.DynamicProgramming
 {
 	public class BreakTheNumber
 	{
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            Console.WriteLine(MaxProduct(n));
-        }
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    Console.WriteLine(MaxProduct(n));
+        //}
 
         private static int MaxProduct(int n)
         {
