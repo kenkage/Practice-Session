@@ -1,39 +1,39 @@
 ﻿using System;
 namespace test.BinaryTrees
 {
-	public class TreeNode
-	{
-		public int val;
-		public TreeNode left;
-		public TreeNode right;
+	//public class TreeNode
+	//{
+	//	public int val;
+	//	public TreeNode left;
+	//	public TreeNode right;
 
-		public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-		{
-			this.val = val;
-			this.left = left;
-			this.right = right;
-		}
-	}
+	//	public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+	//	{
+	//		this.val = val;
+	//		this.left = left;
+	//		this.right = right;
+	//	}
+	//}
 
 	public class MinimumriskPathInBST
 	{
         private int minDiff = int.MaxValue;
         private TreeNode prev = null;
 
-		public static void Main()
-		{
-			string[] values = Console.ReadLine().Split();
-			int n = values.Length;
+		//public static void Main()
+		//{
+		//	string[] values = Console.ReadLine().Split();
+		//	int n = values.Length;
 
-			List<int> nodes = new List<int>();
-			for(int i = 0; i < n; i++)
-			{
-				nodes.Add(int.Parse(values[i]));
-			}
-			TreeNode root = BuildTree(nodes);
-			MinimumriskPathInBST sol = new MinimumriskPathInBST();
-            Console.WriteLine(sol.GetMinimumDifference(root));
-        }
+		//	List<int> nodes = new List<int>();
+		//	for(int i = 0; i < n; i++)
+		//	{
+		//		nodes.Add(int.Parse(values[i]));
+		//	}
+		//	TreeNode root = BuildTree(nodes);
+		//	MinimumriskPathInBST sol = new MinimumriskPathInBST();
+  //          Console.WriteLine(sol.GetMinimumDifference(root));
+  //      }
 
 		static TreeNode BuildTree(List<int> nodes)
 		{
