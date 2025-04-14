@@ -18,7 +18,7 @@ namespace test.BinaryTrees
             Console.WriteLine((CountWays(arr) + MOD) % MOD); // Subtract 1 to exclude original
         }
 
-        static void ComputeCombinations(int n)
+        static void ComputeCombinations(int n) // Pascal triangle
         {
             for (int i = 0; i <= n; i++)
             {
