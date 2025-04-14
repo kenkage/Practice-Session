@@ -3,13 +3,13 @@ namespace test.BinaryTrees
 {
 	public class MaxElementInArray
 	{
-        public static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //public static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            Console.WriteLine(FindPeakIndex(arr));
-        }
+        //    Console.WriteLine(FindPeakIndex(arr));
+        //}
 
         private static int FindPeakIndex(int[] arr)
         {
