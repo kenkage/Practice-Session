@@ -7,16 +7,16 @@ namespace test.BinaryTrees
         const int MOD = 1000000007;
         static long[,] comb;
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-            comb = new long[n + 1, n + 1];
-            ComputeCombinations(n);
+        //    comb = new long[n + 1, n + 1];
+        //    ComputeCombinations(n);
 
-            Console.WriteLine((CountWays(arr) + MOD) % MOD); // Subtract 1 to exclude original
-        }
+        //    Console.WriteLine((CountWays(arr) + MOD) % MOD); // Subtract 1 to exclude original
+        //}
 
         static void ComputeCombinations(int n) // Pascal triangle
         {
@@ -47,7 +47,7 @@ namespace test.BinaryTrees
             long leftWays = CountWays(left);
             long rightWays = CountWays(right);
 
-            long totalWays = comb[nums.Count - 1, left.Count];
+            long totalWays = comb[nums.Count - 1, left.Count]; // comb[left.Count + right.Count, left.Count OR right.Count];
             return (totalWays * leftWays % MOD * rightWays % MOD) % MOD;
         }
 
