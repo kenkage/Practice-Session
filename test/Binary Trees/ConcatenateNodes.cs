@@ -20,7 +20,7 @@ namespace test.BinaryTrees
         //static void Main(string[] args)
         //{
         //    Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
-        //    List<int?> values = new List<int?>();
+        //    List<int> values = new List<int>();
 
         //    string[] inputs = Console.ReadLine().Split();
         //    foreach (string input in inputs)
@@ -32,12 +32,12 @@ namespace test.BinaryTrees
         //    Concatenate(root);
         //}
 
-        private static TreeNode BuildTreeFromInput(List<int?> values)
+        private static TreeNode BuildTreeFromInput(List<int> values)
         {
             if (values == null || values.Count == 0 || values[0] == null) return null;
 
             Queue<TreeNode> queue = new Queue<TreeNode>();
-            TreeNode root = new TreeNode(values[0].Value);
+            TreeNode root = new TreeNode(values[0]);
             queue.Enqueue(root);
             int i = 1;
 
@@ -47,14 +47,14 @@ namespace test.BinaryTrees
 
                 if (values[i] != null)
                 {
-                    node.left = new TreeNode(values[i].Value);
+                    node.left = new TreeNode(values[i]);
                     queue.Enqueue(node.left);
                 }
                 i++;
 
                 if (i < values.Count && values[i] != null)
                 {
-                    node.right = new TreeNode(values[i].Value);
+                    node.right = new TreeNode(values[i]);
                     queue.Enqueue(node.right);
                 }
                 i++;
