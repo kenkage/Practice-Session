@@ -21,6 +21,7 @@
     <None Remove="Strings\" />
     <None Remove="ProblemSolving\" />
     <None Remove="Stack\" />
+    <None Remove="Tries\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TGP-C3\" />
@@ -37,5 +38,6 @@
     <Folder Include="Arrays\" />
     <Folder Include="ProblemSolving\" />
     <Folder Include="Stack\" />
+    <Folder Include="Tries\" />
   </ItemGroup>
 </Project>

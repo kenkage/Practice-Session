@@ -4,15 +4,15 @@ namespace test.BinaryTrees
 {
 	public class AggressiveCows
 	{
-		public static void Main()
-        {
-            var input1 = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            int n = input1[0], k = input1[1];
+		//public static void Main()
+  //      {
+  //          var input1 = Console.ReadLine().Split().Select(int.Parse).ToArray();
+  //          int n = input1[0], k = input1[1];
 
-            var stalls = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            Array.Sort(stalls);
-            Console.WriteLine(AggresiveCows(n, k, stalls));
-        }
+  //          var stalls = Console.ReadLine().Split().Select(int.Parse).ToArray();
+  //          Array.Sort(stalls);
+  //          Console.WriteLine(AggresiveCows(n, k, stalls));
+  //      }
 
         private static int AggresiveCows(int n, int k, int[] stalls)
         {
