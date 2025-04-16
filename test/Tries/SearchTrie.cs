@@ -49,30 +49,30 @@ namespace test.Tries
 	}
 	public class SearchProgramTrie
 	{
-		public static void Main()
-		{
-            TrieNode root = new TrieNode();
-            SearchTrie trie = new SearchTrie(root);
+		//public static void Main()
+		//{
+  //          TrieNode root = new TrieNode();
+  //          SearchTrie trie = new SearchTrie(root);
 
-            Console.WriteLine("Enter number of words to insert in Trie:");
-            int n = int.Parse(Console.ReadLine());
+  //          Console.WriteLine("Enter number of words to insert in Trie:");
+  //          int n = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the words to insert:");
-            string[] insertWords = Console.ReadLine().Split();
+  //          Console.WriteLine("Enter the words to insert:");
+  //          string[] insertWords = Console.ReadLine().Split();
 
-            foreach (var word in insertWords)
-            {
-                trie.Insert(word);
-            }
+  //          foreach (var word in insertWords)
+  //          {
+  //              trie.Insert(word);
+  //          }
 
-            Console.WriteLine("Enter the words to search:");
-            string[] searchWords = Console.ReadLine().Split();
+  //          Console.WriteLine("Enter the words to search:");
+  //          string[] searchWords = Console.ReadLine().Split();
 
-            foreach (var word in searchWords)
-            {
-                Console.WriteLine(trie.Search(word) ? "Yes" : "No");
-            }
-        }
+  //          foreach (var word in searchWords)
+  //          {
+  //              Console.WriteLine(trie.Search(word) ? "Yes" : "No");
+  //          }
+  //      }
 	}
 }
 
