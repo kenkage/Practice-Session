@@ -1,11 +1,24 @@
 # Practice Session
 
-Welcome to the Practice Session repository! This repository contains a collection of coding challenges and solutions to help improve programming skills. It is intended for both individual practice and collaborative learning.
+This repository contains categorized coding practice problems and solutions, primarily written in C#. Navigate through the structured topics below to strengthen your understanding of data structures and algorithms. It is intended for both individual practice and collaborative learning.
+
 
 ## Table of Contents
 
+Click on any folder below to explore the corresponding problems and solutions:
+
+- [Arrays](https://github.com/kenkage/Practice-Session/tree/main/test/Arrays)
+- [Binary Trees](https://github.com/kenkage/Practice-Session/tree/main/test/Binary%20Trees)
 - [Dynamic Programming](https://github.com/kenkage/Practice-Session/tree/main/test/Dynamic%20Programming)
-- [Linked List](https://github.com/kenkage/Practice-Session/tree/main/test/LinkedList)
+- [LinkedList](https://github.com/kenkage/Practice-Session/tree/main/test/LinkedList)
+- [ProblemSolving](https://github.com/kenkage/Practice-Session/tree/main/test/ProblemSolving)
+- [Queue](https://github.com/kenkage/Practice-Session/tree/main/test/Queue)
+- [Searching](https://github.com/kenkage/Practice-Session/tree/main/test/Searching)
+- [Sets](https://github.com/kenkage/Practice-Session/tree/main/test/Sets)
+- [Sorting](https://github.com/kenkage/Practice-Session/tree/main/test/Sorting)
+- [Stack](https://github.com/kenkage/Practice-Session/tree/main/test/Stack)
+- [String](https://github.com/kenkage/Practice-Session/tree/main/test/String)
+- [Tries](https://github.com/kenkage/Practice-Session/tree/main/test/Tries)
 
 ## Features
 
