@@ -1,11 +1,11 @@
 ﻿using System;
 namespace test.Tries
 {
-	public class TrieNode
-	{
-		public TrieNode[] children = new TrieNode[26];
-		public bool IsEndOfWord = false;
-	}
+	//public class TrieNode
+	//{
+	//	public TrieNode[] children = new TrieNode[26];
+	//	public bool IsEndOfWord = false;
+	//}
 
 	public class SearchTrie
 	{
