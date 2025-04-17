@@ -58,16 +58,16 @@ namespace test.BinaryTrees
 
             return result;
         }
+        
+        //static void Main()
+        //{
+        //    int n = int.Parse(Console.ReadLine());
+        //    string[] inputs = Console.ReadLine().Split();
+        //    int[] books = Array.ConvertAll(inputs, int.Parse);
+        //    int m = int.Parse(Console.ReadLine());
 
-        static void Main()
-        {
-            int n = int.Parse(Console.ReadLine());
-            string[] inputs = Console.ReadLine().Split();
-            int[] books = Array.ConvertAll(inputs, int.Parse);
-            int m = int.Parse(Console.ReadLine());
-
-            Console.WriteLine(FindMinimumPages(books, m));
-        }
+        //    Console.WriteLine(FindMinimumPages(books, m));
+        //}
     }
 }
 
