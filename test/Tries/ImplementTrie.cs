@@ -30,8 +30,8 @@ namespace test.Tries
                 if (node.children[ch - 'a'] == null)
                 {
                     node.children[ch - 'a'] = new TrieNode();  //If there’s no existing path (child node) for the current character,
-                }                                              //we need to create a new node to continue building the path. 
-                node = node.children[ch - 'a'];
+                }                                              //we need to create a new node to continue building the path i.e. reference node 
+                node = node.children[ch - 'a']; // reference node is nww node; further addition to be made in reference node.
             }
             node.IsEndOfWord = true;
             Console.WriteLine("Yes");
@@ -39,23 +39,23 @@ namespace test.Tries
     }
     public class TrieProgram
     {
-        //public static void Main()
-        //{
-        //    TrieNode root = new TrieNode();
+        public static void Main()
+        {
+            TrieNode root = new TrieNode();
 
-        //    //Console.WriteLine("Enter the number of words:");
-        //    int n = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the number of words:");
+            int n = int.Parse(Console.ReadLine());
 
-        //    //Console.WriteLine("Enter the words:");
-        //    string[] words = Console.ReadLine().Split();
+            //Console.WriteLine("Enter the words:");
+            string[] words = Console.ReadLine().Split();
 
-        //    ImplementTrie trie = new ImplementTrie(root);
+            ImplementTrie trie = new ImplementTrie(root);
 
-        //    foreach (var word in words)
-        //    {
-        //        trie.Insert(word);
-        //    }
-        //}
+            foreach (var word in words)
+            {
+                trie.Insert(word);
+            }
+        }
     }
 }
 
