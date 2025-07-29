@@ -1,4 +1,6 @@
 ﻿
-1. Partition with given difference
-2. 
+1. Partition with given difference - done
+2. Break the Number - done
+3. Book Allocation Problem
+4. Finding the Size of the Largest Binary Search Tree (BST) - https://miro.com/app/board/uXjVIBxY914=/
 

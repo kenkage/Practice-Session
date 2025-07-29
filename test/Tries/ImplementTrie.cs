@@ -29,8 +29,8 @@ namespace test.Tries
             {
                 if (node.children[ch - 'a'] == null)
                 {
-                    node.children[ch - 'a'] = new TrieNode();
-                }
+                    node.children[ch - 'a'] = new TrieNode();  //If there’s no existing path (child node) for the current character,
+                }                                              //we need to create a new node to continue building the path. 
                 node = node.children[ch - 'a'];
             }
             node.IsEndOfWord = true;
