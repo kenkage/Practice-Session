@@ -1,11 +1,11 @@
 ﻿using System;
 namespace test.Tries
 {
-	public class TrieNode
-	{
-		public TrieNode[] children = new TrieNode[26];
-		public bool IsEndOfWord = false;
-	}
+	//public class TrieNode
+	//{
+	//	public TrieNode[] children = new TrieNode[26];
+	//	public bool IsEndOfWord = false;
+	//}
 
 	public class AutoComplete
 	{
@@ -78,29 +78,29 @@ namespace test.Tries
 	public class AutoCompleteProgram
 	{
 		//public static void Main()
-  //      {
-  //          int n = int.Parse(Console.ReadLine());
-  //          AutoComplete trie = new AutoComplete();
+		//{
+		//	int n = int.Parse(Console.ReadLine());
+		//	AutoComplete trie = new AutoComplete();
 
-  //          for (int i = 0; i < n; i++)
-  //          {
-  //              string word = Console.ReadLine().ToLower();
-  //              trie.Insert(word);
-  //          }
+		//	for (int i = 0; i < n; i++)
+		//	{
+		//		string word = Console.ReadLine().ToLower();
+		//		trie.Insert(word);
+		//	}
 
-  //          string prefix = Console.ReadLine().ToLower();
+		//	string prefix = Console.ReadLine().ToLower();
 
-  //          List<string> autoCompleteResult = trie.AutoCompleteText(prefix);
+		//	List<string> autoCompleteResult = trie.AutoCompleteText(prefix);
 
-  //          if (autoCompleteResult.Count == 0)
-  //          {
-  //              Console.WriteLine("-1");
-  //          }
-  //          else
-  //          {
-  //              Console.WriteLine(string.Join(" ", autoCompleteResult));
-  //          }
-  //      }
-    }
+		//	if (autoCompleteResult.Count == 0)
+		//	{
+		//		Console.WriteLine("-1");
+		//	}
+		//	else
+		//	{
+		//		Console.WriteLine(string.Join(" ", autoCompleteResult));
+		//	}
+		//}
+	}
 }
 

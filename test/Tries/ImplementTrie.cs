@@ -16,15 +16,15 @@ namespace test.Tries
 
     public class ImplementTrie
     {
-        private TrieNode root;
+        private TrieNode root1;
         public ImplementTrie(TrieNode root)
         {
-            this.root = root;
+            this.root1 = root;
         }
 
         public void Insert(string word)
         {
-            TrieNode node = root;
+            TrieNode node = root1;
             foreach (char ch in word)
             {
                 if (node.children[ch - 'a'] == null)
@@ -39,23 +39,23 @@ namespace test.Tries
     }
     public class TrieProgram
     {
-        public static void Main()
-        {
-            TrieNode root = new TrieNode();
+        //public static void Main()
+        //{
+        //    TrieNode root = new TrieNode();
 
-            //Console.WriteLine("Enter the number of words:");
-            int n = int.Parse(Console.ReadLine());
+        //    //Console.WriteLine("Enter the number of words:");
+        //    int n = int.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Enter the words:");
-            string[] words = Console.ReadLine().Split();
+        //    //Console.WriteLine("Enter the words:");
+        //    string[] words = Console.ReadLine().Split();
 
-            ImplementTrie trie = new ImplementTrie(root);
+        //    ImplementTrie trie = new ImplementTrie(root);
 
-            foreach (var word in words)
-            {
-                trie.Insert(word);
-            }
-        }
+        //    foreach (var word in words)
+        //    {
+        //        trie.Insert(word);
+        //    }
+        //}
     }
 }
 
