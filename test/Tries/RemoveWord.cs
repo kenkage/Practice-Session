@@ -101,31 +101,31 @@ namespace test.Tries
 
     public class RemoveWordProgram
     {
-        static void Main(string[] args)
-        {
-            string[] insertWords = Console.ReadLine().Split();
-            string[] removeWords = Console.ReadLine().Split();
+        //static void Main(string[] args)
+        //{
+        //    string[] insertWords = Console.ReadLine().Split();
+        //    string[] removeWords = Console.ReadLine().Split();
 
-            RemoveWord trie = new RemoveWord();
+        //    RemoveWord trie = new RemoveWord();
 
-            // Insert words into trie
-            foreach (string word in insertWords)
-                trie.Insert(word);
+        //    // Insert words into trie
+        //    foreach (string word in insertWords)
+        //        trie.Insert(word);
 
-            // Remove words from trie
-            foreach (string word in removeWords)
-            {
-                if (trie.Exists(word))
-                {
-                    trie.Remove(word);
-                    Console.WriteLine("Removed");
-                }
-                else
-                {
-                    Console.WriteLine("Not Found");
-                }
-            }
-        }
+        //    // Remove words from trie
+        //    foreach (string word in removeWords)
+        //    {
+        //        if (trie.Exists(word))
+        //        {
+        //            trie.Remove(word);
+        //            Console.WriteLine("Removed");
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine("Not Found");
+        //        }
+        //    }
+        //}
     }
 }
 
