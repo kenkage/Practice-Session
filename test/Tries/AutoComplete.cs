@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Tries
 {
 	//public class TrieNode
@@ -77,7 +77,7 @@ namespace test.Tries
 
 	public class AutoCompleteProgram
 	{
-		//public static void Main()
+		//public static void Run()
 		//{
 		//	int n = int.Parse(Console.ReadLine());
 		//	AutoComplete trie = new AutoComplete();

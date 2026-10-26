@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Duplicate Letters
 Dholu is very creative and wants to play with strings and he has a very good idea. You have given a string s, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order
 
@@ -30,14 +30,14 @@ namespace test.TGPC4
 {
 	public class RemoveDuplicateLetters
 	{
-        //static void Main()
-        //{
-        //    Console.WriteLine("Enter a string"); 
-        //    string s = Console.ReadLine();
+        public static void Run()
+        {
+           Console.WriteLine("Enter a string"); 
+           string s = Console.ReadLine();
 
-        //    string result = RemoveDuplicate(s);
-        //    Console.WriteLine($"{result}");
-        //}
+           string result = RemoveDuplicate(s);
+           Console.WriteLine($"{result}");
+        }
 
         static string RemoveDuplicate(string str)
         {

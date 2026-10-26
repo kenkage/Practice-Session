@@ -1,4 +1,4 @@
-﻿/*
+/*
 
 Star graph
 There is an undirected star graph consisting of n nodes labeled from 1 to n. A star graph is a graph where there is one center node and exactly n - 1 edges that connect the center node with every other node.
@@ -96,7 +96,7 @@ namespace test.TGPC5
             return -1;
         }
 
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[][] edges = new int[n - 1][];

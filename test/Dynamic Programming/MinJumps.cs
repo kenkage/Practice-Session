@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Minimum jumps
 Given an array of N integers arr[] where each element represents the maximum length of the jump that can be made forward from that element. This means if arr[i] = x, then we can jump any distance y such that y ≤ x.
 Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element.
@@ -42,16 +42,16 @@ namespace test
 {
 	public class MinJumps
 	{
-		//static void Main()
-		//{
-		//	int N = int.Parse(Console.ReadLine());
-		//	int[] arr = new int[N];
-  //          arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		public static void Run()
+		{
+		int N = int.Parse(Console.ReadLine());
+		int[] arr = new int[N];
+           arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-		//	//int result = MinJumpBruteForce(arr, N);
-		//	int resultR = MinJumRecursive1(arr, N);
-  //          Console.WriteLine($"MinJumps: {resultR}");
-  //      }
+		//int result = MinJumpBruteForce(arr, N);
+		int resultR = MinJumRecursive1(arr, N);
+           Console.WriteLine($"MinJumps: {resultR}");
+       }
 
 		static int MinJumpBruteForce(int[] arr, int N)
 		{

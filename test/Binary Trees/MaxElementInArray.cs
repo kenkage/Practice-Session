@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
 	public class MaxElementInArray
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);

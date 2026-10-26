@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test
 {
 	public class Gemstone
@@ -19,7 +19,7 @@ namespace test
 
 	public class Program2
 	{
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
         //    string[] rocks = new string[] { "abcdde", "baccd", "eeabg" };
         //    int result = Gemstone.Gemstones(rocks);

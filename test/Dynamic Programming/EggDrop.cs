@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 namespace test.DynamicProgramming
 {
 	public class EggDrop
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    int t = int.Parse(Console.ReadLine());
         //    for (int test = 0; test < t; test++)

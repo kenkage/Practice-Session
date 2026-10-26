@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class _32Pattern
@@ -32,7 +32,7 @@ namespace test.Stack
             return false;
         }
 
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    string[] input = Console.ReadLine().Split(' ');

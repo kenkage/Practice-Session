@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Coach Manish
 Manish is the coach of a high school football team. He has come up with a training regime of difficulty 'd' but he is afraid that it might result in his team getting exhausted quickly and prone to fatigue. 
 So he has decided to break the training in 'n' number of days where every day has a certain amount of difficulty and the difficulty of each day adds up to 'd' the original difficulty.
@@ -29,14 +29,14 @@ namespace test.TGPC4
 {
 	public class CoachManish
 	{
-        //static void Main()
-        //{
-        //    string[] input = Console.ReadLine().Split();
-        //    int d = int.Parse(input[0]);
-        //    int n = int.Parse(input[1]);
+        public static void Run()
+        {
+           string[] input = Console.ReadLine().Split();
+           int d = int.Parse(input[0]);
+           int n = int.Parse(input[1]);
 
-        //    Console.WriteLine(MaxGCD(d, n));
-        //}
+           Console.WriteLine(MaxGCD(d, n));
+        }
 
         static int MaxGCD(int d, int n)
 		{

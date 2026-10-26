@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 // https://www.youtube.com/watch?v=GuTPwotSdYw
@@ -47,10 +47,10 @@ class UniquePermutations_Swap
         b = temp;
     }
 
-    //static void Main(string[] args)
-    //{
-    //    string s = Console.ReadLine();
+    public static void Run()
+    {
+       string s = Console.ReadLine();
 
-    //    UniquePermutations(s);
-    //}
+       UniquePermutations(s);
+    }
 }

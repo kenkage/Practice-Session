@@ -1,20 +1,20 @@
-﻿using System;
+using System;
 namespace test.Queue
 {
 	public class ImplementQueues
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
 
-        //    int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    // Create a queue and enqueue the elements
-        //    Queue<int> queue = ImplementQueue(n, elements);
+           // Create a queue and enqueue the elements
+           Queue<int> queue = ImplementQueue(n, elements);
 
-        //    // Output the elements of the queue in the same order
-        //    Console.WriteLine(string.Join(" ", queue));
-        //}
+           // Output the elements of the queue in the same order
+           Console.WriteLine(string.Join(" ", queue));
+        }
 
         static Queue<int> ImplementQueue(int n, int[] elements)
         {

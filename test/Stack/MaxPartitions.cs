@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class MaxPartition
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    Console.WriteLine(MaxPartitions(arr));
-        //}
+           Console.WriteLine(MaxPartitions(arr));
+        }
 
         static int MaxPartitions(int[] arr)
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.LinkedList
 {
     public class ListNode
@@ -14,25 +14,25 @@ namespace test.LinkedList
 
     public class MergeSortedList
 	{
-		//static void Main()
-  //      {
-  //          int n1 = int.Parse(Console.ReadLine());
+		public static void Run()
+       {
+           int n1 = int.Parse(Console.ReadLine());
 
-  //          string[] input1 = Console.ReadLine().Split();
-  //          int[] list1Values = Array.ConvertAll(input1, int.Parse);
+           string[] input1 = Console.ReadLine().Split();
+           int[] list1Values = Array.ConvertAll(input1, int.Parse);
 
-  //          int n2 = int.Parse(Console.ReadLine());
+           int n2 = int.Parse(Console.ReadLine());
 
-  //          string[] input2 = Console.ReadLine().Split();
-  //          int[] list2Values = Array.ConvertAll(input2, int.Parse);
+           string[] input2 = Console.ReadLine().Split();
+           int[] list2Values = Array.ConvertAll(input2, int.Parse);
 
-  //          ListNode list1 = CreateList(list1Values);
-  //          ListNode list2 = CreateList(list2Values);
+           ListNode list1 = CreateList(list1Values);
+           ListNode list2 = CreateList(list2Values);
 
-  //          ListNode mergedList = MergeTwoLists(list1, list2);
+           ListNode mergedList = MergeTwoLists(list1, list2);
 
-  //          PrintList(mergedList);
-  //      }
+           PrintList(mergedList);
+       }
 
         public static void PrintList(ListNode head)
         {

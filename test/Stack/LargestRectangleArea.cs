@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 // https://www.youtube.com/watch?v=0do2734xhnU
 namespace test.Stack
 {
@@ -26,7 +26,7 @@ namespace test.Stack
             return maxArea;
         }
 
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[] heights = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);

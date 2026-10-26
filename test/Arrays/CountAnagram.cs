@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace test.Arrays
@@ -51,17 +51,17 @@ namespace test.Arrays
             return true;
         }
 
-        //static void Main()
-        //{
-        //    Console.WriteLine("Enter string S:");
-        //    string S = Console.ReadLine();
+        public static void Run()
+        {
+           Console.WriteLine("Enter string S:");
+           string S = Console.ReadLine();
 
-        //    Console.WriteLine("Enter string C:");
-        //    string C = Console.ReadLine();
+           Console.WriteLine("Enter string C:");
+           string C = Console.ReadLine();
 
-        //    int result = CountAnagrams(S, C);
-        //    Console.WriteLine($"Output: {result}");
-        //}
+           int result = CountAnagrams(S, C);
+           Console.WriteLine($"Output: {result}");
+        }
     }
 }
 

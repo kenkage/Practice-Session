@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Group Anangrams
 Given an array of strings strs, group the anagrams together.Print the group of anagrams with a single space between them and each group in new line.Also, Print output the list of anagrams in lexicographically sorted order.
 An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
@@ -32,16 +32,16 @@ namespace test.TGPC3
 {
     public class GroupAnagrams
 	{
-		//static void Main()
-		//{
-  //          int n = 6;
-  //          //int n = int.Parse(Console.ReadLine());
-  //          string[] strs = new string[n];
-  //          strs = Console.ReadLine().Split(' ');
-  //          //string[] strs = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
+		public static void Run()
+		{
+           int n = 6;
+           //int n = int.Parse(Console.ReadLine());
+           string[] strs = new string[n];
+           strs = Console.ReadLine().Split(' ');
+           //string[] strs = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
 
-  //          GroupAnagram(n, strs);
-  //      }
+           GroupAnagram(n, strs);
+       }
 
 		static void GroupAnagram(int n, string[] strs)
 		{

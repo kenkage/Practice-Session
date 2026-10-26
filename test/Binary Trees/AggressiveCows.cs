@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 //ref: https://www.youtube.com/watch?v=R_Mfw4ew-Vo
 namespace test.BinaryTrees
 {
 	public class AggressiveCows
 	{
-		//public static void Main()
+		//public static void Run()
   //      {
   //          var input1 = Console.ReadLine().Split().Select(int.Parse).ToArray();
   //          int n = input1[0], k = input1[1];

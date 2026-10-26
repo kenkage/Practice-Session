@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 namespace test.DynamicProgramming
 {
 	public class SubSetSumTo_K
 	{
-		//static void Main()
-		//{
-  //          string[] parts = Console.ReadLine().Split(' ');
-  //          int N = int.Parse(parts[0]);
+		public static void Run()
+		{
+           string[] parts = Console.ReadLine().Split(' ');
+           int N = int.Parse(parts[0]);
 
-  //          int K = int.Parse(parts[1]);
+           int K = int.Parse(parts[1]);
 
-  //          int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-  //          Console.WriteLine(SubsetSum(arr, N, K));
-  //      }
+           Console.WriteLine(SubsetSum(arr, N, K));
+       }
 
         static bool SubsetSum(int[] arr, int N, int K)
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Searching
 {
 	public class SquareRootClass
@@ -31,11 +31,11 @@ namespace test.Searching
             return (n - ans * ans <= (ans + 1) * (ans + 1) - n) ? ans : ans + 1;
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    Console.WriteLine(SquareRoot(n));
-        //}
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           Console.WriteLine(SquareRoot(n));
+        }
     }
 }
 

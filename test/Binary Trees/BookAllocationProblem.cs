@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 // ref: https://www.youtube.com/watch?v=Z0hwjftStI4
 namespace test.BinaryTrees
 {
@@ -59,15 +59,15 @@ namespace test.BinaryTrees
             return result;
         }
         
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    string[] inputs = Console.ReadLine().Split();
-        //    int[] books = Array.ConvertAll(inputs, int.Parse);
-        //    int m = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           string[] inputs = Console.ReadLine().Split();
+           int[] books = Array.ConvertAll(inputs, int.Parse);
+           int m = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine(FindMinimumPages(books, m));
-        //}
+           Console.WriteLine(FindMinimumPages(books, m));
+        }
     }
 }
 

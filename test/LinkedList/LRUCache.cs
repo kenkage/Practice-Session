@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.LinkedList
 {
     public class Node
@@ -97,41 +97,41 @@ namespace test.LinkedList
             }
         }
 
-        //static void Main()
-        //{
-        //    // Console.WriteLine("Enter capacity of the cache:");
-        //    string[] input = Console.ReadLine().Split(' ');
-        //    int cap = int.Parse(input[0]);
-        //    LRUCache cache = new LRUCache(cap);
+        public static void Run()
+        {
+           // Console.WriteLine("Enter capacity of the cache:");
+           string[] input = Console.ReadLine().Split(' ');
+           int cap = int.Parse(input[0]);
+           LRUCache cache = new LRUCache(cap);
 
-        //    // Console.WriteLine("Enter number of queries:");
-        //    int Q = int.Parse(input[1]);
+           // Console.WriteLine("Enter number of queries:");
+           int Q = int.Parse(input[1]);
 
-        //    List<int> result = new List<int>();
+           List<int> result = new List<int>();
 
-        //    for (int i = 0; i < Q; i++)
-        //    {
-        //        string[] query = Console.ReadLine().Split(' ');
+           for (int i = 0; i < Q; i++)
+           {
+               string[] query = Console.ReadLine().Split(' ');
 
-        //        if (query[0] == "SET")
-        //        {
-        //            int key = int.Parse(query[1]);
-        //            int value = int.Parse(query[2]);
-        //            cache.Set(key, value);
-        //        }
-        //        else if (query[0] == "GET")
-        //        {
-        //            int key = int.Parse(query[1]);
-        //            int res = cache.Get(key);
-        //            result.Add(res);  // Store the result
-        //        }
-        //    }
+               if (query[0] == "SET")
+               {
+                   int key = int.Parse(query[1]);
+                   int value = int.Parse(query[2]);
+                   cache.Set(key, value);
+               }
+               else if (query[0] == "GET")
+               {
+                   int key = int.Parse(query[1]);
+                   int res = cache.Get(key);
+                   result.Add(res);  // Store the result
+               }
+           }
 
-        //    foreach (var res in result)
-        //    {
-        //        Console.WriteLine(res);
-        //    }
-        //}
+           foreach (var res in result)
+           {
+               Console.WriteLine(res);
+           }
+        }
     }
 }
 

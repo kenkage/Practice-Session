@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
 	//public class TreeNode
@@ -20,7 +20,7 @@ namespace test.BinaryTrees
         private int minDiff = int.MaxValue;
         private TreeNode prev = null;
 
-		//public static void Main()
+		//public static void Run()
 		//{
 		//	string[] values = Console.ReadLine().Split();
 		//	int n = values.Length;

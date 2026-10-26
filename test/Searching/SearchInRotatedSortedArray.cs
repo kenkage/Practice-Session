@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 namespace test.Searching
 {
 	public class SearchInRotatedSortedArray
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-        //    int target = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int target = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine(SearchInRotatedSortedArrays(nums, target));
-        //}
+           Console.WriteLine(SearchInRotatedSortedArrays(nums, target));
+        }
 
         private static int SearchInRotatedSortedArrays(int[] nums, int target)
         {

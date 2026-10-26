@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
 // https://www.youtube.com/watch?v=bUSaenttI24&t=1341s
 namespace test.DynamicProgramming
 {
 	public class __1Knapsack
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    // Input
         //    string[] line1 = Console.ReadLine().Split();

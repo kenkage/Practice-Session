@@ -1,17 +1,17 @@
-﻿// https://leetcode.com/problems/maximum-width-ramp/
+// https://leetcode.com/problems/maximum-width-ramp/
 
 using System;
 namespace test.Stack
 {
 	public class MaximumWidthRamp
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    Console.WriteLine(MaxWidthRamp(nums));
-        //}
+           Console.WriteLine(MaxWidthRamp(nums));
+        }
 
         static int MaxWidthRamp(int[] nums)
         {

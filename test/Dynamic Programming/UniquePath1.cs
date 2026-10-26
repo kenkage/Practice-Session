@@ -1,4 +1,4 @@
-﻿/*
+/*
  * https://leetcode.com/problems/unique-paths/
  */
 
@@ -8,20 +8,20 @@ namespace test.DynamicProgramming
 	public class UniquePath1
 	{
         
-		//static void Main()
-		//{
-  //          string[] parts = Console.ReadLine().Split(' ');
-  //          int m = int.Parse(parts[0]);
-		//	  int n = int.Parse(parts[1]);
+		public static void Run()
+		{
+           string[] parts = Console.ReadLine().Split(' ');
+           int m = int.Parse(parts[0]);
+		  int n = int.Parse(parts[1]);
 
-		//	//int res = UniquePath(m, n);
-  //          //Console.WriteLine(res);
+		//int res = UniquePath(m, n);
+           //Console.WriteLine(res);
 
-  //          RecursiveSol recursiveSol = new RecursiveSol();
-  //          int res1 = recursiveSol.UniquePathRec(m, n);
+           RecursiveSol recursiveSol = new RecursiveSol();
+           int res1 = recursiveSol.UniquePathRec(m, n);
 
-  //          Console.WriteLine(res1);
-  //      }
+           Console.WriteLine(res1);
+       }
 
 		static int UniquePath(int m, int n)
 		{

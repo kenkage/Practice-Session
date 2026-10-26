@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 // ref:https://www.youtube.com/watch?v=BXkK_Ko7uls
 namespace test.DynamicProgramming
 {
 	public class BreakTheNumber
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    Console.WriteLine(MaxProduct(n));

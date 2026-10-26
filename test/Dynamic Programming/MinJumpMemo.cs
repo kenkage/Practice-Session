@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 namespace test
 {
 	public class MinJumpMemo
 	{
-		//static void Main()
-		//{
-  //          int N = int.Parse(Console.ReadLine()); // Length of array - not necessary to take as input from user we can directly use arr.Length.
-  //          int[] arr = new int[N];
-  //          arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		public static void Run()
+		{
+           int N = int.Parse(Console.ReadLine()); // Length of array - not necessary to take as input from user we can directly use arr.Length.
+           int[] arr = new int[N];
+           arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-		//	int result = MinJumps(arr, N);
-  //          Console.WriteLine("Minimum number of jumps: " + (result == int.MaxValue ? -1 : result));
-  //      }
+		int result = MinJumps(arr, N);
+           Console.WriteLine("Minimum number of jumps: " + (result == int.MaxValue ? -1 : result));
+       }
 
 		static int MinJumps(int[] arr, int N)
 		{

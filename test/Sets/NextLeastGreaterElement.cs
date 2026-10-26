@@ -1,20 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace test.Sets
 {
 	public class NextLeastGreaterElement
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
 
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int[] result = ReplaceWithLeastGreater(nums, n);
+           int[] result = ReplaceWithLeastGreater(nums, n);
 
-        //    Console.WriteLine(string.Join(" ", result));
-        //}
+           Console.WriteLine(string.Join(" ", result));
+        }
 
         static int[] ReplaceWithLeastGreater(int[] nums, int n)
         {

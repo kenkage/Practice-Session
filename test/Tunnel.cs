@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test
 {
 	public class Tunnel
@@ -24,7 +24,7 @@ namespace test
 
     public class Program3
     {
-        //public static void Main()
+        //public static void Run()
         //{
         //    int[] inSeq = new int[] {1,2,3,4,5};
         //    int[] outSeq = new int[] {5,4,3,2,1};

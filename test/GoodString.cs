@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test
 {
     public class GoodString
@@ -28,7 +28,7 @@ namespace test
     // Example usage
     public class Program1
     {
-        //public static void Main()
+        //public static void Run()
         //{
         //    GoodString solution = new GoodString();
         //    string input = "leEeetcode";

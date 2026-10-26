@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Number Game
 Bholu and Dholu play a game. Initially each player receives one fixed positive integer that doesn't change throughout the game. Bholu receives number a and Dholu receives number b. They also have a heap of n stones. The players take turns to make a move and Bholu starts. During a move a player should take from the heap the number of stones equal to the greatest common divisor of the fixed number he has received and the number of stones left in the heap. A player loses when he cannot take the required number of stones (i. e. the heap has strictly less stones left than one needs to take).
 Your task is to determine who wins the game.
@@ -26,32 +26,32 @@ namespace test.TGPC4
 {
 	public class NumberGame
 	{
-		//static void Main()
-		//{
-  //          string[] inputs = Console.ReadLine().Split(' ');
-  //          int a = int.Parse(inputs[0]);
-  //          int b = int.Parse(inputs[1]);
-  //          int n = int.Parse(inputs[2]);
+		public static void Run()
+		{
+           string[] inputs = Console.ReadLine().Split(' ');
+           int a = int.Parse(inputs[0]);
+           int b = int.Parse(inputs[1]);
+           int n = int.Parse(inputs[2]);
 
-  //          while (true)
-  //          {
-  //              int gcdBholu = GCD(a, n);
-  //              if (n < gcdBholu)
-  //              {
-  //                  Console.WriteLine(1); // Dholu wins
-  //                  break;
-  //              }
-  //              n -= gcdBholu;
+           while (true)
+           {
+               int gcdBholu = GCD(a, n);
+               if (n < gcdBholu)
+               {
+                   Console.WriteLine(1); // Dholu wins
+                   break;
+               }
+               n -= gcdBholu;
 
-  //              int gcdDholu = GCD(b, n);
-  //              if (n < gcdDholu)
-  //              {
-  //                  Console.WriteLine(0); // Bholu wins
-  //                  break;
-  //              }
-  //              n -= gcdDholu;
-  //          }
-  //      }
+               int gcdDholu = GCD(b, n);
+               if (n < gcdDholu)
+               {
+                   Console.WriteLine(0); // Bholu wins
+                   break;
+               }
+               n -= gcdDholu;
+           }
+       }
 
         public static int GCD(int x, int y)
         {

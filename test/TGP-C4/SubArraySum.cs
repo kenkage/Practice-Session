@@ -1,16 +1,16 @@
-﻿// https://leetcode.com/problems/sum-of-subarray-minimums/description/
+// https://leetcode.com/problems/sum-of-subarray-minimums/description/
 
 using System;
 namespace test.TGPC4
 {
 	public class SubArraySum
 	{
-        //static void Main()
-        //{
-        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-        //    int result = SumSubarrayMins(arr);
-        //    Console.WriteLine(result);
-        //}
+        public static void Run()
+        {
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+           int result = SumSubarrayMins(arr);
+           Console.WriteLine(result);
+        }
 
         static int SumSubarrayMins(int[] arr)
         {

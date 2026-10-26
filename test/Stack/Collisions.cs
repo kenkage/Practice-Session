@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class Collisions
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] asteroids = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] asteroids = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int[] result = GetAsteroidState(asteroids);
-        //    Console.WriteLine(result.Length == 0 ? "[]" : string.Join(" ", result));
-        //}
+           int[] result = GetAsteroidState(asteroids);
+           Console.WriteLine(result.Length == 0 ? "[]" : string.Join(" ", result));
+        }
 
         static int[] GetAsteroidState(int[] asteroids)
         {

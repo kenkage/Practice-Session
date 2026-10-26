@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
     //public class TreeNode
@@ -18,14 +18,14 @@ namespace test.BinaryTrees
     public class ZigZagTravesal
 	{
         private int ans = 0;
-        //static void Main(string[] args)
-        //{
-        //    TreeNode root = BuildTree();
+        public static void Run()
+        {
+           TreeNode root = BuildTree();
 
-        //    ZigZagTravesal sol = new ZigZagTravesal();
-        //    int result = sol.maxZigzagStudents(root);
-        //    Console.WriteLine(result);
-        //}
+           ZigZagTravesal sol = new ZigZagTravesal();
+           int result = sol.maxZigzagStudents(root);
+           Console.WriteLine(result);
+        }
 
         public int maxZigzagStudents(TreeNode root)
         {

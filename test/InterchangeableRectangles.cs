@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 namespace test
 {
-	public class Solution
+	public class InterchangeableRectanglesSolution
 	{
         public long InterchangeableRectangles(int[][] rectangles)
         {
@@ -47,7 +47,7 @@ namespace test
 
     public class Program6
     {
-        //public static void Main()
+        //public static void Run()
         //{
         //    int[][] rectangles1 = new int[][]
         //{
@@ -56,7 +56,7 @@ namespace test
         //    new int[] { 10, 20 },
         //    new int[] { 15, 30 }
         //};
-        //    Solution solution = new Solution();
+        //    InterchangeableRectanglesSolution solution = new InterchangeableRectanglesSolution();
         //    long result = solution.InterchangeableRectangles(rectangles1);
 
         //    Console.WriteLine(result);

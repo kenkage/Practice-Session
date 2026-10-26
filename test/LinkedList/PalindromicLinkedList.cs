@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.LinkedList
 {
     //public class ListNode
@@ -14,18 +14,18 @@ namespace test.LinkedList
 
     public class PalindromicLinkedList
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] array = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-        //    ListNode head = BuildList(array);
+           ListNode head = BuildList(array);
 
-        //    //ListNode reversedHead = ReverseList(head);
+           //ListNode reversedHead = ReverseList(head);
 
-        //    bool isPalindrome = IsPalindrome(head);
-        //    Console.WriteLine(isPalindrome.ToString().ToLower());
-        //}
+           bool isPalindrome = IsPalindrome(head);
+           Console.WriteLine(isPalindrome.ToString().ToLower());
+        }
 
         static ListNode BuildList(int[] arr)
         {

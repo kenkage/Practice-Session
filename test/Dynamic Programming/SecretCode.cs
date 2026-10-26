@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Secret Codes
 You and your friend have decided to exchange messages in the form of secret codes. You will be communicating in numbers where number '1' represents 'a' number '2' represents 'b' and so on until the number '26' that represents 'z'. Every message has a difficulty which is represented as the total number of ways your message can be interpreted. For example: 23 can be interpreted as 'ab' as well as 'w' so it has a difficulty of 2. Given an array 'ar' containing n number of integers, calculate its difficulty.
 
@@ -36,14 +36,14 @@ namespace test.DynamicProgramming
 {
 	public class SecretCode
 	{
-		//static void Main()
-		//{
-		//	int n = int.Parse(Console.ReadLine());
-		//	int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		public static void Run()
+		{
+		int n = int.Parse(Console.ReadLine());
+		int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-		//	int res = Solve(arr, 0, n);
-		//	Console.WriteLine(res);
-		//}
+		int res = Solve(arr, 0, n);
+		Console.WriteLine(res);
+		}
 
 		static int Solve(int[] arr, int i, int n)
 		{

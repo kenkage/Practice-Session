@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 namespace test.Sets
@@ -26,12 +26,12 @@ namespace test.Sets
             }
         }
 
-        //static void Main()
-        //{
-        //    // Read input string
-        //    string s = Console.ReadLine().Trim();
-        //    PrintPermutation(s, "");
-        //    Console.WriteLine(finalRes.Count());
-        //}
+        public static void Run()
+        {
+           // Read input string
+           string s = Console.ReadLine().Trim();
+           PrintPermutation(s, "");
+           Console.WriteLine(finalRes.Count());
+        }
     }
 }

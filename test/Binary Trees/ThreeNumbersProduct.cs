@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
     //public class TreeNode
@@ -16,27 +16,27 @@ namespace test.BinaryTrees
 
     public class ThreeNumbersProduct
 	{
-        //static void Main()
-        //{
-        //    Console.WriteLine("Enter number of nodes:");
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           Console.WriteLine("Enter number of nodes:");
+           int n = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine("Enter level-order values (-1 for null nodes):");
-        //    List<int?> values = new List<int?>();
-        //    string[] inputs = Console.ReadLine().Split();
-        //    foreach (string input in inputs)
-        //    {
-        //        values.Add(input == "-1" ? (int?)null : int.Parse(input));
-        //    }
+           Console.WriteLine("Enter level-order values (-1 for null nodes):");
+           List<int?> values = new List<int?>();
+           string[] inputs = Console.ReadLine().Split();
+           foreach (string input in inputs)
+           {
+               values.Add(input == "-1" ? (int?)null : int.Parse(input));
+           }
 
-        //    Console.WriteLine("Enter target product:");
-        //    int k = int.Parse(Console.ReadLine());
+           Console.WriteLine("Enter target product:");
+           int k = int.Parse(Console.ReadLine());
 
-        //    TreeNode root = BuildTreeFromInput(values);
-        //    bool result = FindThreeProduct(root, k);
+           TreeNode root = BuildTreeFromInput(values);
+           bool result = FindThreeProduct(root, k);
 
-        //    Console.WriteLine(result.ToString().ToLower());
-        //}
+           Console.WriteLine(result.ToString().ToLower());
+        }
 
         private static TreeNode BuildTreeFromInput(List<int?> values)
         {

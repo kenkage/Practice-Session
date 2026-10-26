@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Strings
 {
 	public class MarsMission_Again
@@ -10,7 +10,7 @@ namespace test.Strings
             return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
         }
 
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
         //    // Read the length of the string (optional, can use s.Length)
         //    int n;

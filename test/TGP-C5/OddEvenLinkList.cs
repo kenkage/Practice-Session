@@ -1,4 +1,4 @@
-﻿/*
+/*
 
 Odd Even Linked List
 Given the head of a singly linked list, reorder the list such that all nodes at odd positions are grouped together followed by the nodes at even positions.
@@ -73,7 +73,7 @@ namespace test.TGPC5
             return head;
         }
 
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
         //    // Read input size
         //    int n = int.Parse(Console.ReadLine());

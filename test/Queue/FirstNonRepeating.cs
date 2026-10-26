@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 namespace test.Queue
 {
 	public class FirstNonRepeating
 	{
-        //static void Main()
-        //{
-        //    string input = Console.ReadLine();
-        //    string result = FirstNonRepeatingCharacter(input);
-        //    Console.WriteLine(result);
-        //}
+        public static void Run()
+        {
+           string input = Console.ReadLine();
+           string result = FirstNonRepeatingCharacter(input);
+           Console.WriteLine(result);
+        }
 
         static string FirstNonRepeatingCharacter(string str)
         {

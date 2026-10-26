@@ -1,15 +1,15 @@
-﻿using System;
+using System;
 
 //ref: https://www.youtube.com/watch?v=RiNzHfoA2Lo
 namespace test.DynamicProgramming
 {
 	public class LongestPalindromicSubsequence
 	{
-		//static void Main()
-		//{
-  //          string s = Console.ReadLine();
-  //          Console.WriteLine(LongestPalindromeSubseq(s));
-  //      }
+		public static void Run()
+		{
+           string s = Console.ReadLine();
+           Console.WriteLine(LongestPalindromeSubseq(s));
+       }
 
         private static int LongestPalindromeSubseq(string s)
         {

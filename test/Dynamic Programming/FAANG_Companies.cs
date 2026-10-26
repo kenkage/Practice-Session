@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Getting in faang companies
 A learner at heycoach wants to grab a job in a faang companies, so he start following a schedule ( learning DSA, Practising questions and learning cs fundamentals ), Each day he performs one of these three activities and he can’t perform the same activity on two consecutive days. Each activity has some merit points on each day. These merit points will decide weather he is eligible to get into a faang company or not. Learner wants to improve everything to get a good job as early as possible. Can you help the learner in finding out the maximum merit point he can earn ?
 
@@ -37,19 +37,19 @@ namespace test
 {
 	public class FAANG_Companies
 	{
-		//static void Main()
-		//{
-  //          int N = int.Parse(Console.ReadLine());
-  //          int[][] merits = new int[N][];
+		public static void Run()
+		{
+           int N = int.Parse(Console.ReadLine());
+           int[][] merits = new int[N][];
 
-  //          for (int i = 0; i < N; i++)
-  //          {
-  //              merits[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-  //          }
+           for (int i = 0; i < N; i++)
+           {
+               merits[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+           }
 
-  //          int res = MaxMeritPoints(merits);
-  //          Console.WriteLine(res);
-  //      }
+           int res = MaxMeritPoints(merits);
+           Console.WriteLine(res);
+       }
 
 		static int MaxMeritPoints(int[][] merits)
 		{

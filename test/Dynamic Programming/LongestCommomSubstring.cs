@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Longest Common Substring
 Given two strings, find out the longest common substring. A substring is a contiguous segment within a string.
 
@@ -57,19 +57,19 @@ namespace test
 {
 	public class LongestCommomSubstrings
 	{
-        //static void Main()
-        //{
-        //    Console.Write("Enter the first string: ");
-        //    string? str1 = Console.ReadLine();
+        public static void Run()
+        {
+           Console.Write("Enter the first string: ");
+           string? str1 = Console.ReadLine();
 
-        //    Console.Write("Enter the second string: ");
-        //    string? str2 = Console.ReadLine();
+           Console.Write("Enter the second string: ");
+           string? str2 = Console.ReadLine();
 
-        //    //string result = LCS(str1, str2);
-        //    string result = FindLongestCommonSubstring(str1, str2);
+           //string result = LCS(str1, str2);
+           string result = FindLongestCommonSubstring(str1, str2);
 
-        //    Console.WriteLine("Longest common substring: " + result);
-        //}
+           Console.WriteLine("Longest common substring: " + result);
+        }
 
         // With Dynamic Programming
         //public static string LCS(string? str1, string? str2)

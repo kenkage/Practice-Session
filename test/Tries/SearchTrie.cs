@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Tries
 {
 	//public class TrieNode
@@ -49,7 +49,7 @@ namespace test.Tries
 	}
 	public class SearchProgramTrie
 	{
-		//public static void Main()
+		//public static void Run()
 		//{
   //          TrieNode root = new TrieNode();
   //          SearchTrie trie = new SearchTrie(root);

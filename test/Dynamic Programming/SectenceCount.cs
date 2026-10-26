@@ -1,4 +1,4 @@
-﻿/*  Problem: 
+/*  Problem: 
     Sentence Count
     Given a string 's' and a dictionary of words 'dict' of length 'n', add spaces in s to construct a sentence where each word is a valid dictionary word. Each dictionary word can be used more than once. Return the number of such possible sentences.
     
@@ -36,21 +36,21 @@ namespace test.DynamicProgramming
 {
 	public class SectenceCount
 	{
-        //static void Main()
-        //{
-        //    // List<string> dict = new List<string> { "he", "hebrew", "brew", "bible", "isa", "book", "is", "a" };
-        //    Console.WriteLine("Enter the number of dictionary words:");
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           // List<string> dict = new List<string> { "he", "hebrew", "brew", "bible", "isa", "book", "is", "a" };
+           Console.WriteLine("Enter the number of dictionary words:");
+           int n = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine("Enter the dictionary words:");
-        //    List<string> dict = new List<string>(Console.ReadLine().Trim().Split(' '));
+           Console.WriteLine("Enter the dictionary words:");
+           List<string> dict = new List<string>(Console.ReadLine().Trim().Split(' '));
 
-        //    Console.WriteLine("Enter the string to form sentences from:");
-        //    string s = "hebrewbibleisabook"; // Console.ReadLine().Trim();
+           Console.WriteLine("Enter the string to form sentences from:");
+           string s = "hebrewbibleisabook"; // Console.ReadLine().Trim();
 
-        //    int result = CountSentences(s, dict);
-        //    Console.WriteLine($"{result}");
-        //}
+           int result = CountSentences(s, dict);
+           Console.WriteLine($"{result}");
+        }
 
         static int CountSentences(string s, List<string> dict)
         {

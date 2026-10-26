@@ -1,20 +1,20 @@
-﻿using System;
+using System;
 namespace test.Queue
 {
 	public class PetrolPump
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
 
-        //    int[] petrol = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] petrol = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int[] distance = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] distance = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int result = CircularTour(petrol, distance, n);
+           int result = CircularTour(petrol, distance, n);
 
-        //    Console.WriteLine(result);
-        //}
+           Console.WriteLine(result);
+        }
 
         static int CircularTour(int[] petrol, int[] distance, int n)
         {

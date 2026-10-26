@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 namespace test.DynamicProgramming
 {
 	public class PartitionWithMiniSumDiff
 	{
         int minDiff = int.MaxValue;
-        //static void Main()
-        //{
-        //          int[] vec = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-        //          Console.WriteLine(FindMin(vec));
-        //      }
+        public static void Run()
+        {
+                 int[] vec = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+                 Console.WriteLine(FindMin(vec));
+             }
 
         static int FindMin(int[] arr)
         {

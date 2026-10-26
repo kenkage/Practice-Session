@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class Tunnel
@@ -24,7 +24,7 @@ namespace test.Stack
             return 1;
         }
 
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[] IN = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);

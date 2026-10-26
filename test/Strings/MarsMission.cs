@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace test.Strings
@@ -31,12 +31,12 @@ namespace test.Strings
             return string.Join(" ", segments); // Efficient joining
         }
 
-        //static void Main()
-        //{
-        //    //int n = int.Parse(Console.ReadLine());
-        //    string s = Console.ReadLine();
-        //    Console.WriteLine(ConvertToAlienSentence(s));
-        //}
+        public static void Run()
+        {
+           //int n = int.Parse(Console.ReadLine());
+           string s = Console.ReadLine();
+           Console.WriteLine(ConvertToAlienSentence(s));
+        }
     }
 }
 

@@ -1,25 +1,25 @@
-﻿using System;
+using System;
 namespace test.DynamicProgramming
 {
 	public class MaxFallingPathSum2
 	{
-		//static void Main()
-		//{
-  //     int n = int.Parse(Console.ReadLine());
-  //     int[][] grid = new int[n][];
+		public static void Run()
+		{
+      int n = int.Parse(Console.ReadLine());
+      int[][] grid = new int[n][];
 
-  //     for (int i = 0; i < n; i++)
-  //     {
-  //         grid[i] = new int[n];
-  //         string[] input = Console.ReadLine().Split(' ');
-  //         for (int j = 0; j < n; j++)
-  //         {
-  //             grid[i][j] = int.Parse(input[j]);
-  //         }
-  //     }
-  //     int res = MaxFallingPathSum(grid);
-  //     Console.WriteLine(res);
-  // }
+      for (int i = 0; i < n; i++)
+      {
+          grid[i] = new int[n];
+          string[] input = Console.ReadLine().Split(' ');
+          for (int j = 0; j < n; j++)
+          {
+              grid[i][j] = int.Parse(input[j]);
+          }
+      }
+      int res = MaxFallingPathSum(grid);
+      Console.WriteLine(res);
+  }
 
         static int MaxFallingPathSum(int[][] grid)
         {

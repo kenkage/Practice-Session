@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 namespace test.Arrays
 {
 	public class DiwaliLights
 	{
-		//static void Main()
-		//{
-  //          string[] parts = Console.ReadLine().Split(' ');
-  //          int N = int.Parse(parts[0]);
-  //          int K = int.Parse(parts[1]);
+		public static void Run()
+		{
+           string[] parts = Console.ReadLine().Split(' ');
+           int N = int.Parse(parts[0]);
+           int K = int.Parse(parts[1]);
 
-		//	string S = Console.ReadLine();
+		string S = Console.ReadLine();
 
-  //          int result = LongestWorkingLightsSubstring(N, K, S);
-  //          Console.WriteLine("The length of the longest substring with all working lights: " + result);
-  //      }
+           int result = LongestWorkingLightsSubstring(N, K, S);
+           Console.WriteLine("The length of the longest substring with all working lights: " + result);
+       }
 
         public static int LongestWorkingLightsSubstring(int N, int K, string S)
         {

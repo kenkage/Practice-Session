@@ -1,4 +1,4 @@
-﻿/*
+/*
 Problem: 
 Bunty in the horror house
 Bunty is stuck in a horror house that consists of a N*N maze with bunty being at room [0][0]. Find the total number paths that bunty can follow to reach the exit i.e. room[N-1][N-1]. He can move in any direc­tion ( left, right, up and down).
@@ -49,20 +49,20 @@ namespace test
 {
     class BuntyHorrorHouse
     {
-        //static void Main()
-        //{
-        //    int N = int.Parse(Console.ReadLine());
-        //    int[][] maze = new int[N][];
+        public static void Run()
+        {
+           int N = int.Parse(Console.ReadLine());
+           int[][] maze = new int[N][];
 
-        //    for (int i = 0; i < N; i++)
-        //    {
+           for (int i = 0; i < N; i++)
+           {
 
-        //        maze[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
-        //    }
-        //    List<string> path = new List<string>();
-        //    int totalPaths = CountPaths(maze, 0, 0, N, path);
-        //    Console.WriteLine($"Total Paths: {totalPaths}");
-        //}
+               maze[i] = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+           }
+           List<string> path = new List<string>();
+           int totalPaths = CountPaths(maze, 0, 0, N, path);
+           Console.WriteLine($"Total Paths: {totalPaths}");
+        }
 
         static int CountPaths(int[][] maze, int i, int j, int N, List<string> path, string direction = null)
         {

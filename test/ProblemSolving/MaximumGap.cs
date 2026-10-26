@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.ProblemSolving
 {
 	public class MaximumGap
@@ -44,7 +44,7 @@ namespace test.ProblemSolving
             return maxGap;
         }
 
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);

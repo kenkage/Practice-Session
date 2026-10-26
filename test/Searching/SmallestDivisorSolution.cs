@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Searching
 {
 	public class SmallestDivisorSolution
@@ -41,14 +41,14 @@ namespace test.Searching
             return sum;
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-        //    int limit = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int limit = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine(SmallestDivisor(nums, limit));
-        //}
+           Console.WriteLine(SmallestDivisor(nums, limit));
+        }
     }
 }
 

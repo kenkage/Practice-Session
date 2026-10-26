@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace test.Sorting
 {
 	public class RestaurantTip
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine()); // Read number of friends
         //    int[] food = Console.ReadLine().Split().Select(int.Parse).ToArray(); // Food consumption

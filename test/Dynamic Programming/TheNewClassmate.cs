@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.IO;
 
 namespace test.DynamicProgramming
 {
 	public class TheNewClassmate
 	{
-        //static void Main()
-        //{
-        //    //int n = Convert.ToInt32(Console.ReadLine());
-        //    string s = Console.ReadLine();
+        public static void Run()
+        {
+           //int n = Convert.ToInt32(Console.ReadLine());
+           string s = Console.ReadLine();
 
-        //    int result = GreatestLexicographicalSequenceSize(s.Length, s);
-        //    Console.WriteLine(result);
-        //}
+           int result = GreatestLexicographicalSequenceSize(s.Length, s);
+           Console.WriteLine(result);
+        }
 
         static int GreatestLexicographicalSequenceSize(int n, string s)
         {

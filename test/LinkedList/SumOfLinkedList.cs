@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.LinkedList
 {
     //public class ListNode
@@ -14,7 +14,7 @@ namespace test.LinkedList
 
     public class SumOfLinkedList
 	{
-        //public static void Main()
+        //public static void Run()
         //{
         //    // Read input for the number of nodes in both lists
         //    string[] lengths = Console.ReadLine().Split(' ');

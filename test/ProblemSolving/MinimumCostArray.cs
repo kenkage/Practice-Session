@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.ProblemSolving
 {
 	public class MinimumCostArray
@@ -23,12 +23,12 @@ namespace test.ProblemSolving
             return minSum;
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-        //    Console.WriteLine(MinCostToDivideArray(nums));
-        //}
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           Console.WriteLine(MinCostToDivideArray(nums));
+        }
     }
 }
 

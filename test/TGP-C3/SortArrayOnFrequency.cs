@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Sort the Array
 You have to sort the string s in decreasing order based on the frequency of the characters. Return the sorted string. if frequency of two character are same then sort in alphabetical order.
 
@@ -17,14 +17,14 @@ namespace test.TGPC3
 {
 	public class SortArrayOnFrequency
 	{
-		//static void Main()
-		//{
-		//	Console.WriteLine("Enter the string to be sorted");
-		//	string s = Console.ReadLine();
+		public static void Run()
+		{
+		Console.WriteLine("Enter the string to be sorted");
+		string s = Console.ReadLine();
 
-		//	string result = FrequencySort(s);
-		//	Console.WriteLine($"{result}");
-		//}
+		string result = FrequencySort(s);
+		Console.WriteLine($"{result}");
+		}
 
 		static string FrequencySort(string s)
 		{

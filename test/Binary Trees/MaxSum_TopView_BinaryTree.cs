@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace test.BinaryTrees
@@ -19,21 +19,21 @@ namespace test.BinaryTrees
 
 	public class MaxSum_TopView_BinaryTree
 	{
-		//static void Main(string[] args)
-		//{
-  //          Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
-		//	List<int?> values = new List<int?>();
+		public static void Run()
+		{
+           Console.WriteLine("Enter the values in level-order traversal (-1 for null nodes):");
+		List<int?> values = new List<int?>();
 
-		//	string[] inputs = Console.ReadLine().Split();
-		//	foreach(string input in inputs)
-		//	{
-		//		values.Add(input == "-1" ? (int?)null : int.Parse(input));
-		//	}
+		string[] inputs = Console.ReadLine().Split();
+		foreach(string input in inputs)
+		{
+			values.Add(input == "-1" ? (int?)null : int.Parse(input));
+		}
 
-		//	TreeNode root = BuildTreeFromInput(values);
-		//	Solution solution = new Solution();
-		//	Console.WriteLine(solution.MaxSumTopView(root));
-  //      }
+		TreeNode root = BuildTreeFromInput(values);
+		MaxSumTopViewSolution solution = new MaxSumTopViewSolution();
+		Console.WriteLine(solution.MaxSumTopView(root));
+       }
 
         private static TreeNode BuildTreeFromInput(List<int?> values)
         {
@@ -66,7 +66,7 @@ namespace test.BinaryTrees
         }
     }
 
-    public class Solution
+    public class MaxSumTopViewSolution
     {
         public int MaxSumTopView(TreeNode root)
         {

@@ -1,35 +1,25 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left, right;
+    // TreeNode is defined in Models/TreeNode.cs
 
-        public TreeNode(int val = 0)
-        {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
     public class SortTheBST
 	{
-        //public static void Main()
-        //{
-        //    int t = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+            int t = int.Parse(Console.ReadLine());
 
-        //    for (int test = 0; test < t; test++)
-        //    {
-        //        string[] input = Console.ReadLine().Split();
-        //        TreeNode root = BuildBST(input);
+            for (int test = 0; test < t; test++)
+            {
+                string[] input = Console.ReadLine().Split();
+                TreeNode root = BuildBST(input);
 
-        //        List<int> sorted = new List<int>();
-        //        InOrder(root, sorted);
+                List<int> sorted = new List<int>();
+                InOrder(root, sorted);
 
-        //        Console.WriteLine(string.Join(" ", sorted));
-        //    }
-        //}
+                Console.WriteLine(string.Join(" ", sorted));
+            }
+        }
 
         public static TreeNode BuildBST(string[] nodes)
         {

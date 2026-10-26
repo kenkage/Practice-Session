@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace test.Searching
@@ -48,14 +48,14 @@ namespace test.Searching
             return maxSweetness;
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] prices = Console.ReadLine().Split().Select(int.Parse).ToArray();
-        //    int k = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] prices = Console.ReadLine().Split().Select(int.Parse).ToArray();
+           int k = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine(MaxSweetness(prices, k));
-        //}
+           Console.WriteLine(MaxSweetness(prices, k));
+        }
     }
 }
 

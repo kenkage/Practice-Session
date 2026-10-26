@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Basic Calculator
 Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.
 
@@ -11,13 +11,13 @@ namespace test.TGPC3
 {
 	public class BasicCalculator
 	{
-		//static void Main()
-		//{
-  //          Console.Write("Enter the expression: ");
-  //          string s = Console.ReadLine();
-		//	int result = Calculate(s);
-  //          Console.WriteLine($"{result}");
-  //      }
+		public static void Run()
+		{
+           Console.Write("Enter the expression: ");
+           string s = Console.ReadLine();
+		int result = Calculate(s);
+           Console.WriteLine($"{result}");
+       }
 
 		static int Calculate(string s)
 		{

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class CountTheOperation
@@ -30,10 +30,10 @@ namespace test.Stack
             return (open + 1) / 2 + (close + 1) / 2;
         }
 
-        //static void Main()
-        //{
-        //    string s = Console.ReadLine();
-        //    Console.WriteLine(CountReversals(s));
-        //}
+        public static void Run()
+        {
+           string s = Console.ReadLine();
+           Console.WriteLine(CountReversals(s));
+        }
     }
 }

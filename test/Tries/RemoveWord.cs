@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 namespace test.Tries
 {
-    public class TrieNode
+    public class RemoveWordTrieNode
     {
-        public TrieNode[] children = new TrieNode[52];
+        public RemoveWordTrieNode[] children = new RemoveWordTrieNode[52];
         public bool IsEndOfWord = false;
     }
 
     public class RemoveWord
 	{
-        TrieNode root;
+        RemoveWordTrieNode root;
 		public RemoveWord()
 		{
-            root = new TrieNode();
+            root = new RemoveWordTrieNode();
 		}
 
         private int GetIndex(char c)
@@ -27,14 +27,14 @@ namespace test.Tries
 
         public void Insert(string word)
         {
-            TrieNode node = root;
+            RemoveWordTrieNode node = root;
 
             foreach(char ch in word)
             {
                 int index = GetIndex(ch);
                 if (node.children[index] == null)
                 {
-                    node.children[index] = new TrieNode();
+                    node.children[index] = new RemoveWordTrieNode();
                 }
                 node = node.children[index];
             }
@@ -46,7 +46,7 @@ namespace test.Tries
             return RemoveHelper(root, word, 0);
         }
 
-        private bool RemoveHelper(TrieNode node, string word, int index)
+        private bool RemoveHelper(RemoveWordTrieNode node, string word, int index)
         {
             if (index == word.Length)
             {
@@ -60,7 +60,7 @@ namespace test.Tries
             }
 
             int charIndex = GetIndex(word[index]);
-            TrieNode child = node.children[charIndex];
+            RemoveWordTrieNode child = node.children[charIndex];
             if (child == null)
                 return false; // word not found
 
@@ -75,7 +75,7 @@ namespace test.Tries
             return false;
         }
 
-        private bool IsEmpty(TrieNode node)
+        private bool IsEmpty(RemoveWordTrieNode node)
         {
             for (int i = 0; i < 52; i++)
             {
@@ -87,7 +87,7 @@ namespace test.Tries
 
         public bool Exists(string word)
         {
-            TrieNode node = root;
+            RemoveWordTrieNode node = root;
             foreach (char c in word)
             {
                 int index = GetIndex(c);
@@ -101,31 +101,31 @@ namespace test.Tries
 
     public class RemoveWordProgram
     {
-        //static void Main(string[] args)
-        //{
-        //    string[] insertWords = Console.ReadLine().Split();
-        //    string[] removeWords = Console.ReadLine().Split();
+        public static void Run()
+        {
+           string[] insertWords = Console.ReadLine().Split();
+           string[] removeWords = Console.ReadLine().Split();
 
-        //    RemoveWord trie = new RemoveWord();
+           RemoveWord trie = new RemoveWord();
 
-        //    // Insert words into trie
-        //    foreach (string word in insertWords)
-        //        trie.Insert(word);
+           // Insert words into trie
+           foreach (string word in insertWords)
+               trie.Insert(word);
 
-        //    // Remove words from trie
-        //    foreach (string word in removeWords)
-        //    {
-        //        if (trie.Exists(word))
-        //        {
-        //            trie.Remove(word);
-        //            Console.WriteLine("Removed");
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Not Found");
-        //        }
-        //    }
-        //}
+           // Remove words from trie
+           foreach (string word in removeWords)
+           {
+               if (trie.Exists(word))
+               {
+                   trie.Remove(word);
+                   Console.WriteLine("Removed");
+               }
+               else
+               {
+                   Console.WriteLine("Not Found");
+               }
+           }
+        }
     }
 }
 

@@ -1,22 +1,22 @@
-﻿using System;
+using System;
 namespace test.Queue
 {
 	public class ReverseQueue
 	{
-        //static void Main()
-        //{
-        //    string[] input = Console.ReadLine().Split();
-        //    int n = int.Parse(input[0]);
-        //    int k = int.Parse(input[1]);
+        public static void Run()
+        {
+           string[] input = Console.ReadLine().Split();
+           int n = int.Parse(input[0]);
+           int k = int.Parse(input[1]);
 
-        //    int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] elements = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    Queue<int> queue = new Queue<int>(elements);
+           Queue<int> queue = new Queue<int>(elements);
 
-        //    queue = ReverseKElements(queue, k);
+           queue = ReverseKElements(queue, k);
 
-        //    Console.WriteLine(string.Join(" ", queue));
-        //}
+           Console.WriteLine(string.Join(" ", queue));
+        }
 
         static Queue<int> ReverseKElements(Queue<int> queue, int k)
         {

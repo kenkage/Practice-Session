@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.ProblemSolving
 {
 	public class FrequencySorting
@@ -88,12 +88,12 @@ namespace test.ProblemSolving
 
             return result;
         }
-        //static void Main()
-        //{
-        //    string s = Console.ReadLine();
+        public static void Run()
+        {
+           string s = Console.ReadLine();
 
-        //    Console.WriteLine(FrequencySort(s));
-        //}
+           Console.WriteLine(FrequencySort(s));
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 /* https://www.youtube.com/watch?v=4vzXy8jVK38
     Take reference from this link.
@@ -84,17 +84,17 @@ class CircularLinkedList
         Console.WriteLine();
     }
 
-    //static void Main()
-    //{
-    //    int n = int.Parse(Console.ReadLine());
-    //    int[] values = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+    public static void Run()
+    {
+       int n = int.Parse(Console.ReadLine());
+       int[] values = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-    //    CircularLinkedList list = new CircularLinkedList();
-    //    foreach (int value in values)
-    //        list.Append(value);
+       CircularLinkedList list = new CircularLinkedList();
+       foreach (int value in values)
+           list.Append(value);
 
-    //    (Node first, Node second) = list.AlternatingSplit();
-    //    PrintList(first);
-    //    PrintList(second);
-    //}
+       (Node first, Node second) = list.AlternatingSplit();
+       PrintList(first);
+       PrintList(second);
+    }
 }

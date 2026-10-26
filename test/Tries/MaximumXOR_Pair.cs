@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Tries
 {
     class XORTrieNode
@@ -76,7 +76,7 @@ namespace test.Tries
             return maxXor;
         }
 
-        static void Main(string[] args)
+        public static void Run()
         {
             int n = int.Parse(Console.ReadLine());
             string[] input = Console.ReadLine().Split();

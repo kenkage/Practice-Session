@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Sets
 {
 	public class LongestSubarray
@@ -30,13 +30,13 @@ namespace test.Sets
             return maxLength;
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    Console.WriteLine(FindMaxLength(nums));
-        //}
+           Console.WriteLine(FindMaxLength(nums));
+        }
     }
 }
 

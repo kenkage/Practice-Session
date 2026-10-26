@@ -1,19 +1,19 @@
-﻿using System;
+using System;
 namespace test.Sorting
 {
 	public class SpecialPairs
 	{
         static long specialPairs = 0;
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] scores = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] scores = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    MergeSort(scores, 0, n - 1);
+           MergeSort(scores, 0, n - 1);
 
-        //    Console.WriteLine(specialPairs);
-        //}
+           Console.WriteLine(specialPairs);
+        }
 
         static void MergeSort(int[] arr, int left, int right)
         {

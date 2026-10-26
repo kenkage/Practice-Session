@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test
 {
 	public class SimplifiedFraction
@@ -45,7 +45,7 @@ namespace test
 
     public class Program5
     {
-        //public static void Main()
+        //public static void Run()
         //{
         //    SimplifiedFraction solution = new SimplifiedFraction();
         //    IList<string> result = solution.SimplifiedFractions(4);

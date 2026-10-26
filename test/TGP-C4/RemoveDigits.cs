@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Remove K digits
 Given a non-negative integer represented as a string num and an integer k, remove k digits from the number so that the new number is the smallest possible. The remaining digits should maintain their original order in the string. Return the result as a string.
 Input Format:
@@ -34,14 +34,14 @@ namespace test.TGPC4
 {	
 	public class RemoveDigits
 	{
-		//static void Main()
-		//{
-		//	string num = "1432219";
-		//	int k = 3;
-		//	string result = Remove_K_Digits(num, k);
-        //   string res1 = Remove_K_Digits_UsingList(num, k);
-		//	Console.WriteLine($"{res1}");
-		//}
+		public static void Run()
+		{
+		string num = "1432219";
+		int k = 3;
+		string result = Remove_K_Digits(num, k);
+          string res1 = Remove_K_Digits_UsingList(num, k);
+		Console.WriteLine($"{res1}");
+		}
 
 		static string Remove_K_Digits(string num, int k)
 		{

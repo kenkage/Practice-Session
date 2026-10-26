@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.BinaryTrees
 {
 	public class PeakElement
@@ -17,12 +17,12 @@ namespace test.BinaryTrees
             return left; // The peak index
         }
 
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-        //    Console.WriteLine(FindPeakElement(nums));
-        //}
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           Console.WriteLine(FindPeakElement(nums));
+        }
     }
 }
 

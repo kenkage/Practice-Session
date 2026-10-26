@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Sorting
 {
 	public class MaximumStones
@@ -38,7 +38,7 @@ namespace test.Sorting
         //    Console.WriteLine($"Binish: {binishTotal}");
         //}
 
-        //public static void Main()
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
         //    int[] piles = Console.ReadLine().Split().Select(int.Parse).ToArray();

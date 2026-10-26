@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Linq;
 
-class MergeSortProgram
+namespace test.Sorting
+{
+    public class MergeSortProgram
 {
     // Merge function to merge two sorted subarrays
     static void Merge(int[] arr, int left, int mid, int right)
@@ -55,16 +57,17 @@ class MergeSortProgram
         }
     }
 
-    //static void Main()
-    //{
-    //    // Read input
-    //    int n = int.Parse(Console.ReadLine());
-    //    int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
+    public static void Run()
+    {
+       // Read input
+       int n = int.Parse(Console.ReadLine());
+       int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-    //    // Apply merge sort
-    //    MergeSort(arr, 0, n - 1);
+       // Apply merge sort
+       MergeSort(arr, 0, n - 1);
 
-    //    // Print sorted array
-    //    Console.WriteLine(string.Join(" ", arr));
-    //}
+       // Print sorted array
+       Console.WriteLine(string.Join(" ", arr));
+    }
+}
 }

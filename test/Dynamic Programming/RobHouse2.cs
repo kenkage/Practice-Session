@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Max coins -II
 Nitin is an explorer, and he has a map that consists of n number of houses. All houses at this place are arranged in a circle. Each house has a certain amount of money stashed. The only constraint stopping Nitin from getting each of them is that adjacent houses have security systems connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
@@ -30,16 +30,16 @@ namespace test
 {
 	public class RobHouse2
 	{
-		//static void Main()
-		//{
-  //          int N = int.Parse(Console.ReadLine());
-  //          int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+		public static void Run()
+		{
+           int N = int.Parse(Console.ReadLine());
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-  //          int res = Rob(arr, N);
-  //          //int res = RobRecursive(arr, N);
+           int res = Rob(arr, N);
+           //int res = RobRecursive(arr, N);
 
-  //          Console.WriteLine(res);
-  //      }
+           Console.WriteLine(res);
+       }
 
         static int Rob(int[] arr, int N)
         {

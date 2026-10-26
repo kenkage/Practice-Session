@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Arrays
 {
 	public class RohanLoves0_1_
@@ -23,16 +23,16 @@ namespace test.Arrays
             return false;
         }
 
-        //static void Main()
-        //{
-        //    Console.WriteLine("Enter the size of the array:");
-        //    int n = int.Parse(Console.ReadLine());
+        public static void Run()
+        {
+           Console.WriteLine("Enter the size of the array:");
+           int n = int.Parse(Console.ReadLine());
 
-        //    Console.WriteLine("Enter the array elements:");
-        //    int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           Console.WriteLine("Enter the array elements:");
+           int[] nums = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    Console.WriteLine(HasZeroSumSubarray(nums) ? "Yes" : "No");
-        //}
+           Console.WriteLine(HasZeroSumSubarray(nums) ? "Yes" : "No");
+        }
     }
 }
 

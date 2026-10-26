@@ -1,4 +1,4 @@
-﻿/*
+/*
  * New Matrix
 Tuntun is very creative. She is thinking of a new way to modify the matrix but she is very weak in coding so help her to do so. You are given a n x m integer matrix matrix, if an element is 0, set its entire row and column to 0's.
 You must do it in place.
@@ -25,36 +25,36 @@ namespace test.TGPC4
 {
 	public class NewMatrix
 	{
-        //static void Main()
-        //{
-        //    var dimensions = Console.ReadLine().Split(' ');
-        //    int n = int.Parse(dimensions[0]);
-        //    int m = int.Parse(dimensions[1]);
+        public static void Run()
+        {
+           var dimensions = Console.ReadLine().Split(' ');
+           int n = int.Parse(dimensions[0]);
+           int m = int.Parse(dimensions[1]);
 
-        //    // Input the matrix
-        //    int[,] matrix = new int[n, m];
-        //    for (int i = 0; i < n; i++)
-        //    {
-        //        var row = Console.ReadLine().Split(' ');
-        //        for (int j = 0; j < m; j++)
-        //        {
-        //            matrix[i, j] = int.Parse(row[j]);
-        //        }
-        //    }
+           // Input the matrix
+           int[,] matrix = new int[n, m];
+           for (int i = 0; i < n; i++)
+           {
+               var row = Console.ReadLine().Split(' ');
+               for (int j = 0; j < m; j++)
+               {
+                   matrix[i, j] = int.Parse(row[j]);
+               }
+           }
 
-        //    // Modify the matrix in place
-        //    SetZeroes(matrix);
+           // Modify the matrix in place
+           SetZeroes(matrix);
 
-        //    // Output the modified matrix
-        //    for (int i = 0; i < n; i++)
-        //    {
-        //        for (int j = 0; j < m; j++)
-        //        {
-        //            Console.Write(matrix[i, j] + " ");
-        //        }
-        //        Console.WriteLine();
-        //    }
-        //}
+           // Output the modified matrix
+           for (int i = 0; i < n; i++)
+           {
+               for (int j = 0; j < m; j++)
+               {
+                   Console.Write(matrix[i, j] + " ");
+               }
+               Console.WriteLine();
+           }
+        }
 
         static void SetZeroes(int[,] matrix)
         {

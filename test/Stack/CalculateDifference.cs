@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.Stack
 {
 	public class CalculateDifference
@@ -31,7 +31,7 @@ namespace test.Stack
             return result;
         }
 
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
         //    int n = int.Parse(Console.ReadLine());
 

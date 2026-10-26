@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.LinkedList
 {
     //public class DoublyLinkedListNode
@@ -16,17 +16,17 @@ namespace test.LinkedList
 
     public class RotateNodes
 	{
-        //static void Main()
-        //{
-        //    int n = int.Parse(Console.ReadLine());
-        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void Run()
+        {
+           int n = int.Parse(Console.ReadLine());
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int k = int.Parse(Console.ReadLine());
+           int k = int.Parse(Console.ReadLine());
 
-        //    DoublyLinkedListNode head = CreateList(arr);
-        //    DoublyLinkedListNode newHead = RotateByK(head, k);
-        //    PrintList(newHead);
-        //}
+           DoublyLinkedListNode head = CreateList(arr);
+           DoublyLinkedListNode newHead = RotateByK(head, k);
+           PrintList(newHead);
+        }
 
         private static DoublyLinkedListNode RotateByK(DoublyLinkedListNode head, int k)
         {

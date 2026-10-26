@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test.DynamicProgramming
 {
 	public class PartitionWithGivenDifference
@@ -41,18 +41,18 @@ namespace test.DynamicProgramming
             return dp[n, target];
         }
 
-        //static void Main(string[] args)
-        //{
-        //    // Read inputs
-        //    string[] nm = Console.ReadLine().Split();
-        //    int n = int.Parse(nm[0]);
-        //    int d = int.Parse(nm[1]);
+        public static void Run()
+        {
+           // Read inputs
+           string[] nm = Console.ReadLine().Split();
+           int n = int.Parse(nm[0]);
+           int d = int.Parse(nm[1]);
 
-        //    int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+           int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        //    int result = CountPartitions(arr, d);
-        //    Console.WriteLine(result);
-        //}
+           int result = CountPartitions(arr, d);
+           Console.WriteLine(result);
+        }
     } 
 }
 /*

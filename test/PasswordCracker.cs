@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace test
 {
 	public class PasswordCrackers
@@ -36,7 +36,7 @@ namespace test
 
     public class Program4
     {
-        //public static void Main(string[] args)
+        //public static void Run()
         //{
             //List<string> passwords1 = new List<string> { "abra", "ka", "dabra" };
             //string loginAttempt1 = "abrakadabra";

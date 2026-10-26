@@ -1,4 +1,4 @@
-﻿/*
+/*
  * https://leetcode.com/problems/unique-paths-ii/
  */
 
@@ -7,31 +7,31 @@ namespace test.DynamicProgramming
 {
 	public class UniquePath2
 	{
-		//static void Main()
-		//{
-  //          string[] parts = Console.ReadLine().Split(' ');
-  //          int m = int.Parse(parts[0]);
-  //          int n = int.Parse(parts[1]);
+		public static void Run()
+		{
+           string[] parts = Console.ReadLine().Split(' ');
+           int m = int.Parse(parts[0]);
+           int n = int.Parse(parts[1]);
 
-  //          int[,] grid = new int[m, n];
+           int[,] grid = new int[m, n];
 
-  //          for (int i = 0; i < m; i++)
-  //          {
-  //              string[] inputRow = Console.ReadLine().Split(' ');
+           for (int i = 0; i < m; i++)
+           {
+               string[] inputRow = Console.ReadLine().Split(' ');
 
-  //              for (int j = 0; j < n; j++)
-  //              {
-  //                  grid[i, j] = int.Parse(inputRow[j]);
-  //              }
-  //          }
+               for (int j = 0; j < n; j++)
+               {
+                   grid[i, j] = int.Parse(inputRow[j]);
+               }
+           }
 
-  //          int res = uniquePath2(grid);
-  //          Console.WriteLine(res);
-            //RecursiveUniquePathSol recursiveSol = new RecursiveUniquePathSol();
-            //int res1 = recursiveSol.UniquePathRec(m, n, grid);
-            //Console.WriteLine(res1);
+           int res = uniquePath2(grid);
+           Console.WriteLine(res);
+            RecursiveUniquePathSol recursiveSol = new RecursiveUniquePathSol();
+            int res1 = recursiveSol.UniquePathRec(m, n, grid);
+            Console.WriteLine(res1);
 
-        //}
+        }
 
         static int uniquePath(int[,] obstacleGrid)
         {
