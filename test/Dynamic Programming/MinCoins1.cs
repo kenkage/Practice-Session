@@ -22,7 +22,7 @@ Output:
 
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class MinCoins1
 	{

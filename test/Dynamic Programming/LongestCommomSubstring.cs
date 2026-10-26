@@ -53,7 +53,7 @@ No common substring is present.
  */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class LongestCommomSubstrings
 	{

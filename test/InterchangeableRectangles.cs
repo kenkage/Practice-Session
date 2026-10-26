@@ -45,22 +45,22 @@ namespace test
         }
     }
 
-    public class Program6
+    public class InterchangeableRectangles
     {
-        //public static void Run()
-        //{
-        //    int[][] rectangles1 = new int[][]
-        //{
-        //    new int[] { 4, 8 },
-        //    new int[] { 3, 6 },
-        //    new int[] { 10, 20 },
-        //    new int[] { 15, 30 }
-        //};
-        //    InterchangeableRectanglesSolution solution = new InterchangeableRectanglesSolution();
-        //    long result = solution.InterchangeableRectangles(rectangles1);
+        public static void Run()
+        {
+            int[][] rectangles1 = new int[][]
+        {
+            new int[] { 4, 8 },
+            new int[] { 3, 6 },
+            new int[] { 10, 20 },
+            new int[] { 15, 30 }
+        };
+            InterchangeableRectanglesSolution solution = new InterchangeableRectanglesSolution();
+            long result = solution.InterchangeableRectangles(rectangles1);
 
-        //    Console.WriteLine(result);
-        //}
+            Console.WriteLine(result);
+        }
     }
 }
 

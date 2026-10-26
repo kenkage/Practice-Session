@@ -23,7 +23,7 @@ n == grid[i].length
  */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class MinTaxPaid_I
 	{

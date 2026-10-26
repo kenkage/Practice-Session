@@ -4,97 +4,100 @@ using System;
     Take reference from this link.
     However, the solution in this link is not making the final list as cyclic linked list.
  */
-class Node
+namespace test.ProblemSolving
 {
-    public int Data;
-    public Node Next;
-    public Node(int data)
+    class Node
     {
-        Data = data;
-        Next = null;
-    }
-}
-
-class CircularLinkedList
-{
-    public Node Head;
-
-    public void Append(int data)
-    {
-        Node newNode = new Node(data);
-        if (Head == null)
+        public int Data;
+        public Node Next;
+        public Node(int data)
         {
-            Head = newNode;
-            Head.Next = Head;
-            return;
+            Data = data;
+            Next = null;
         }
-
-        Node temp = Head;
-        while (temp.Next != Head)
-            temp = temp.Next;
-
-        temp.Next = newNode;
-        newNode.Next = Head;
     }
 
-    public (Node, Node) AlternatingSplit()
+    class AlternatingSplitofCircularLinkedList
     {
-        if (Head == null || Head.Next == Head)
-            return (Head, null);
+        public Node Head;
 
-        Node first = Head;
-        Node second = Head.Next;
-        Node firstTail = first, secondTail = second;
-        Node current = second.Next;
-        bool isFirst = true;
-
-        while (current != Head)
+        public void Append(int data)
         {
-            if (isFirst)
+            Node newNode = new Node(data);
+            if (Head == null)
             {
-                firstTail.Next = current;
-                firstTail = current;
+                Head = newNode;
+                Head.Next = Head;
+                return;
             }
-            else
-            {
-                secondTail.Next = current;
-                secondTail = current;
-            }
-            isFirst = !isFirst;
-            current = current.Next;
+
+            Node temp = Head;
+            while (temp.Next != Head)
+                temp = temp.Next;
+
+            temp.Next = newNode;
+            newNode.Next = Head;
         }
-        // For making first and second linked list circular.
-        firstTail.Next = first;
-        if (second != null) secondTail.Next = second;
 
-        return (first, second);
-    }
-
-    public static void PrintList(Node head)
-    {
-        if (head == null) return;
-
-        Node temp = head;
-        while (true)
+        public (Node, Node) AlternatingSplit()
         {
-            Console.Write(temp.Data + " ");
-            temp = temp.Next;
-            if (temp == head) break;
+            if (Head == null || Head.Next == Head)
+                return (Head, null);
+
+            Node first = Head;
+            Node second = Head.Next;
+            Node firstTail = first, secondTail = second;
+            Node current = second.Next;
+            bool isFirst = true;
+
+            while (current != Head)
+            {
+                if (isFirst)
+                {
+                    firstTail.Next = current;
+                    firstTail = current;
+                }
+                else
+                {
+                    secondTail.Next = current;
+                    secondTail = current;
+                }
+                isFirst = !isFirst;
+                current = current.Next;
+            }
+            // For making first and second linked list circular.
+            firstTail.Next = first;
+            if (second != null) secondTail.Next = second;
+
+            return (first, second);
         }
-        Console.WriteLine();
-    }
 
-    public static void Run()
-    {
-       int n = int.Parse(Console.ReadLine());
-       int[] values = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+        public static void PrintList(Node head)
+        {
+            if (head == null) return;
 
-       CircularLinkedList list = new CircularLinkedList();
-       foreach (int value in values)
-           list.Append(value);
+            Node temp = head;
+            while (true)
+            {
+                Console.Write(temp.Data + " ");
+                temp = temp.Next;
+                if (temp == head) break;
+            }
+            Console.WriteLine();
+        }
 
-       (Node first, Node second) = list.AlternatingSplit();
-       PrintList(first);
-       PrintList(second);
+        public static void Run()
+        {
+            int n = int.Parse(Console.ReadLine());
+            int[] values = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+
+            AlternatingSplitofCircularLinkedList list = new AlternatingSplitofCircularLinkedList();
+            foreach (int value in values)
+                list.Append(value);
+
+            (Node first, Node second) = list.AlternatingSplit();
+            PrintList(first);
+            PrintList(second);
+        }
     }
 }

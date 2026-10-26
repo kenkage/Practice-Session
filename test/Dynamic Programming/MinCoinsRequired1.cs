@@ -28,7 +28,7 @@
 */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
     public class MinCoinsRequired1
     {

@@ -33,7 +33,7 @@ Contraints:
  */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class FAANG_Companies
 	{

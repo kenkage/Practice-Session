@@ -1,8 +1,8 @@
 using System;
 namespace test
 {
-	public class Gemstone
-	{
+	public class GemstoneSolution
+    {
         public static int Gemstones(string[] arr)
         {
             HashSet<char> gemstones = new HashSet<char>(arr[0]);
@@ -17,14 +17,14 @@ namespace test
         }
     }
 
-	public class Program2
-	{
-        //public static void Run()
-        //{
-        //    string[] rocks = new string[] { "abcdde", "baccd", "eeabg" };
-        //    int result = Gemstone.Gemstones(rocks);
-        //    Console.WriteLine(result);  // Output: 2
-        //}
+	public class Gemstone
+    {
+        public static void Run()
+        {
+            string[] rocks = new string[] { "abcdde", "baccd", "eeabg" };
+            int result = GemstoneSolution.Gemstones(rocks);
+            Console.WriteLine(result);  // Output: 2
+        }
     }
 }
 

@@ -31,7 +31,7 @@ n == matrix.length == matrix[i].length
  */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class MinTaxPaid_II
 	{

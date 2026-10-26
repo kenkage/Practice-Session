@@ -26,7 +26,7 @@ Constraints:
  */
 
 using System;
-namespace test
+namespace test.DynamicProgramming
 {
 	public class RobHouse2
 	{

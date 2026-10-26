@@ -45,7 +45,7 @@ Explanation: Only 1 path is possible which is:
 using System;
 using System.IO;
 
-namespace test
+namespace test.DynamicProgramming
 {
     class BuntyHorrorHouse
     {

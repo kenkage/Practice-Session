@@ -1,7 +1,7 @@
 using System;
 namespace test
 {
-	public class Tunnel
+	public class TunnelSolution
 	{
         public static int CheckSequences(int n, int[] inSeq, int[] outSeq)
         {
@@ -22,15 +22,15 @@ namespace test
         }
     }
 
-    public class Program3
+    public class Tunnel
     {
-        //public static void Run()
-        //{
-        //    int[] inSeq = new int[] {1,2,3,4,5};
-        //    int[] outSeq = new int[] {5,4,3,2,1};
-        //    int result = Tunnel.CheckSequences(5, inSeq, outSeq);
-        //    Console.WriteLine(result);
-        //}
+        public static void Run()
+        {
+            int[] inSeq = new int[] { 1, 2, 3, 4, 5 };
+            int[] outSeq = new int[] { 5, 4, 3, 2, 1 };
+            int result = TunnelSolution.CheckSequences(5, inSeq, outSeq);
+            Console.WriteLine(result);
+        }
 
     }
 }
